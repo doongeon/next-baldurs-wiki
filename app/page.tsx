@@ -3,6 +3,10 @@
 import { useForm, SubmitHandler } from "react-hook-form";
 import { gameData } from "../gameData_01";
 import React, { useEffect, useState } from "react";
+import { WeaponTrait } from "../type";
+
+
+
 
 type Inputs = {
   searchString: string;

@@ -1,2 +1,4 @@
 node_modules
 .next
+crawling/env/lib/*
+crawling/data/*
