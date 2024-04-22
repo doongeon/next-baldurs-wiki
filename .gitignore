@@ -1,4 +1,5 @@
-node_modules
+node_modules/*
 .next
-crawling/env/lib/*
-crawling/data/*
+python/env/*
+python/data/*
+venv
