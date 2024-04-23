@@ -11,6 +11,7 @@ export const gameData = {
       weaponActions: [],
       info: "-",
       damageStat: { maxDamage: 36, minDamage: 3, meanDamage: 19.5 },
+      id: 1,
     },
     {
       name_ko: "달등불",
@@ -23,6 +24,7 @@ export const gameData = {
       weaponActions: [],
       info: "등불 유리의 각 액자 면에는 창과 긴 덩굴손이 뚫려 있어 섬뜩할 정도로 아름다운 달빛이 비칩니다.",
       damageStat: { maxDamage: 6, minDamage: 1, meanDamage: 3.5 },
+      id: 2,
     },
     {
       name_ko: "의식용 단검",
@@ -38,6 +40,7 @@ export const gameData = {
       weaponActions: ["관통 공격"],
       info: "가죽 손잡이는 사용감이 부드러우며 신선한 피가 흐릅니다.",
       damageStat: { maxDamage: 4, minDamage: 1, meanDamage: 2.5 },
+      id: 3,
     },
     {
       name_ko: "워그송곳니",
@@ -52,6 +55,7 @@ export const gameData = {
       weaponActions: ["관통 공격"],
       info: "이 단검의 손잡이에는 '어떤 고블린도 당신을 쓰러트릴 수 없다'는 문구가 새겨져 있습니다. 고블린 공격자들은 단검의 원래 주인을 죽일 수 없다는 것을 깨닫고 그를 워르그에게 넘겼고, 그는 간단히 살해당했습니다.",
       damageStat: { maxDamage: 4, minDamage: 1, meanDamage: 2.5 },
+      id: 4,
     },
     {
       name_ko: "사냥꾼의 단검",
@@ -66,6 +70,7 @@ export const gameData = {
       weaponActions: ["속임수 동작", "관통 공격", "찢어발기기"],
       info: "먹잇감은 포식자의 피에 굶주리고 분노하는 최악의 상황은 피했다고 생각하기 쉽지만, 항상 더 큰 고통이 기다리고 있습니다.",
       damageStat: { maxDamage: 5, minDamage: 2, meanDamage: 2.5 },
+      id: 5,
     },
     {
       name_ko: "샤르의 의식 단검",
@@ -78,6 +83,7 @@ export const gameData = {
       weaponActions: ["관통 공격"],
       info: "칼날은 날카롭고 손잡이는 튼튼합니다. 하지만 이 단검에서는 신선한 시체와도 같은 죽음의 냄새가 납니다.",
       damageStat: { maxDamage: 9, minDamage: 3, meanDamage: 5.0 },
+      id: 6,
     },
     {
       name_ko: "살인자의 자상",
@@ -92,6 +98,7 @@ export const gameData = {
       weaponActions: ["속임수 동작", "관통 공격", "찢어발기기"],
       info: "바알과 같은 어둠의 신이 한때 인간이었다고 생각하면 이상하죠. 마차를 타거나 날씨에 대해 생각해 본 적이 있는지, 향이 첨가된 요구르트를 먹어 본 적이 있는지 궁금해집니다.",
       damageStat: { maxDamage: 9, minDamage: 3, meanDamage: 5.0 },
+      id: 7,
     },
     {
       name_ko: "선제 공격의 숏소드",
@@ -106,6 +113,7 @@ export const gameData = {
       weaponActions: ["속임수 동작", "관통 공격"],
       info: "정교하게 만들어졌으며 놀랍도록 날카로운 황금빛 칼날입니다.",
       damageStat: { maxDamage: 6, minDamage: 1, meanDamage: 3.5 },
+      id: 8,
     },
     {
       name_ko: "신속 대응",
@@ -120,6 +128,7 @@ export const gameData = {
       weaponActions: ["속임수 동작", "찢어발기기"],
       info: "무거운 손잡이와 넓은 날은 이 무기의 속도를 낮잡아 보게 만들지만, 이 검이 바람을 가르는 속도는 여느 결투용 세이버와 다름없이 날랩니다.",
       damageStat: { maxDamage: 6, minDamage: 1, meanDamage: 3.5 },
+      id: 9,
     },
     {
       name_ko: "실반 시미터",
@@ -134,6 +143,7 @@ export const gameData = {
       weaponActions: ["속임수 동작", "찢어발기기", "회전베기"],
       info: "페이와일드에서는 강물에서 행동까지 모든 것이 기이하게 움직입니다. 마법과 물리적인 것이 서로 투과할 수 있는 수은이 흐르는 곳입니다.",
       damageStat: { maxDamage: 7, minDamage: 2, meanDamage: 3.5 },
+      id: 10,
     },
     {
       name_ko: "감시자의 인도 (공식 번역: 주시자의 인도)",
@@ -148,6 +158,7 @@ export const gameData = {
       weaponActions: ["돌진 공격"],
       info: "이 창의 광택은 세월에 의해 흐려졌지만 중심 부분은 희미한 푸른빛으로 반짝입니다. 그것이 내뿜는 마법은 오래되었고 끔찍하며... 신성합니다. 이전 주인이 죽은 뒤에도 변함없는 충성심을 기리기 위해 주어졌습니다.",
       damageStat: { maxDamage: 8, minDamage: 1, meanDamage: 4.5 },
+      id: 11,
     },
     {
       name_ko: "절대자의 눈",
@@ -162,6 +173,7 @@ export const gameData = {
       weaponActions: ["돌진 공격"],
       info: "이 창의 끝은 적의 눈을 향해 정확하게 날아갑니다.",
       damageStat: { maxDamage: 8, minDamage: 1, meanDamage: 4.5 },
+      id: 12,
     },
     {
       name_ko: "들쭉날쭉한 창",
@@ -176,6 +188,7 @@ export const gameData = {
       weaponActions: ["돌진 공격"],
       info: "명중시 대상에게 심각한 부상을 가합니다.  이 창의 날 부분은 검게 녹아 있으며, 이로 인해 가장자리가 치명적인 형태로 거칠어졌습니다.",
       damageStat: { maxDamage: 8, minDamage: 1, meanDamage: 4.5 },
+      id: 13,
     },
     {
       name_ko: "번개 찌르개",
@@ -191,6 +204,7 @@ export const gameData = {
       weaponActions: ["돌진 공격"],
       info: "거대한 게의 발톱으로 만든 임시 창과 쿠오토아 어민들의 넘치는 상상력을 만나보세요.",
       damageStat: { maxDamage: 13, minDamage: 3, meanDamage: 7.0 },
+      id: 14,
     },
     {
       name_ko: "비명의 검",
@@ -203,6 +217,7 @@ export const gameData = {
       weaponActions: ["속임수 동작", "관통 공격", "쇠약의 일격"],
       info: "흠잡을 데 없이 공들여 만든 검입니다. 검이 바람을 가를 때 희미하게 속삭이는 비명 소리가 들리는 것만 같습니다...",
       damageStat: { maxDamage: 12, minDamage: 2, meanDamage: 7.0 },
+      id: 15,
     },
     {
       name_ko: "파열의 검",
@@ -220,6 +235,7 @@ export const gameData = {
       ],
       info: "레이피어의 끝부분이 가열된 미늘로 갈라질 수 있으며, 착용자가 자신을 찔러 활성화하기로 결정하면 보상을 위한 희생을 치를 수 있습니다.",
       damageStat: { maxDamage: 9, minDamage: 2, meanDamage: 4.5 },
+      id: 16,
     },
     {
       name_ko: "허피",
@@ -237,6 +253,7 @@ export const gameData = {
       ],
       info: "가장 우아한 무기는 아니지만, 힘센 팔로 매우 무거운 전쟁 곡괭이를 휘두르면 전투에서 치명적일 수 있습니다. 특이하게도 이 무기의 손잡이에는 작은 토끼가 새겨져 있습니다.",
       damageStat: { maxDamage: 9, minDamage: 2, meanDamage: 4.5 },
+      id: 17,
     },
     {
       name_ko: "귀환 장창",
@@ -245,10 +262,11 @@ export const gameData = {
       weaponRange: 2.5,
       trait: ["파이크", "양손", "투척", "장병기"],
       enchantment: 1,
-      special: ["귀환 무기: 이 무기를 던지면 주인에게 되돌아옵니다."],
+      special: ["귀소성 무기: 이 무기를 던지면 주인에게 되돌아옵니다."],
       weaponActions: ["돌진 공격", "관통 공격", "대비"],
       info: "'미친 윌버'는 드워프 간지럼수염 부족이 발명한 기술입니다. 이 기술은 덩치가 큰 적에게 무기를 삼키게 한 다음, 최대한 지저분하게 무기를 다시 불러오는 것입니다.",
       damageStat: { maxDamage: 11, minDamage: 2, meanDamage: 5.5 },
+      id: 18,
     },
     {
       name_ko: "의식용 도끼",
@@ -263,6 +281,7 @@ export const gameData = {
       weaponActions: ["찢어발기기"],
       info: "광택이 나고 최근에 연마되었지만, 여전히 말라붙은 피가 도끼의 가장 깊은 틈새를 메우고 있습니다.",
       damageStat: { maxDamage: 6, minDamage: 1, meanDamage: 3.5 },
+      id: 19,
     },
     {
       name_ko: "용의 손아귀",
@@ -277,6 +296,7 @@ export const gameData = {
       weaponActions: ["찢어발기기"],
       info: "어째서인지, 이 도끼는 항상 따뜻합니다.",
       damageStat: { maxDamage: 10, minDamage: 2, meanDamage: 6.0 },
+      id: 20,
     },
     {
       name_ko: "마녀파괴자",
@@ -296,6 +316,7 @@ export const gameData = {
       ],
       info: "너는 마녀가... 뭐, 마녀가 하는 짓을 계속하게 둬서는 안 된다. 아마 두꺼비나... 뭐 그런 것들과 관련된 악의적인 짓일 거야.",
       damageStat: { maxDamage: 11, minDamage: 2, meanDamage: 5.5 },
+      id: 21,
     },
     {
       name_ko: "피부파열자",
@@ -310,6 +331,7 @@ export const gameData = {
       weaponActions: ["돌진 공격", "찢어발기기", "회전베기"],
       info: "은은한 빛을 받으면 곡선으로 휘어진 강철 머리가 미소를 짓는 모습과 기이하게 닮았습니다.",
       damageStat: { maxDamage: 11, minDamage: 2, meanDamage: 5.5 },
+      id: 22,
     },
     {
       name_ko: "창조의 빛",
@@ -324,6 +346,7 @@ export const gameData = {
       weaponActions: ["돌진 공격", "찢어발기기", "회전베기"],
       info: "미늘창의 축을 따라 작은 자철석들이 박혀있으며, 그 사이로 묘한 푸른 전류가 흐르고 있습니다.",
       damageStat: { maxDamage: 17, minDamage: 3, meanDamage: 9.0 },
+      id: 23,
     },
     {
       name_ko: "처형인의 도끼",
@@ -338,6 +361,7 @@ export const gameData = {
       weaponActions: ["회전베기", "찢어발기기", "준비"],
       info: "이 도끼의 날과 손잡이에 새겨진 복잡한 조각들은 이걸 만든 대장장이의 솜씨를 잘 보여줍니다.",
       damageStat: { maxDamage: 18, minDamage: 2, meanDamage: 10.0 },
+      id: 24,
     },
     {
       name_ko: "정말 무거운 그레이트액스",
@@ -354,6 +378,7 @@ export const gameData = {
       ],
       info: "정말로 많이 무겁습니다.",
       damageStat: { maxDamage: 13, minDamage: 2, meanDamage: 6.5 },
+      id: 25,
     },
     {
       name_ko: "영원불길 검",
@@ -366,6 +391,7 @@ export const gameData = {
       weaponActions: ["자루 치기", "찢어발기기", "회전베기"],
       info: "칼집에서 꺼내자마자 조용한 불꽃이 칼날 위로 치솟아 오릅니다.",
       damageStat: { maxDamage: 16, minDamage: 3, meanDamage: 9.5 },
+      id: 26,
     },
     {
       name_ko: "정의의 검",
@@ -380,6 +406,7 @@ export const gameData = {
       weaponActions: ["자루 치기", "찢어발기기", "회전베기"],
       info: "'구원, 정의, 복수' 세 단어가 검의 맨 아랫부분에 각인되어 있고, 당신의 마음속에서 울려 퍼집니다.",
       damageStat: { maxDamage: 13, minDamage: 3, meanDamage: 7.0 },
+      id: 27,
     },
     {
       name_ko: "언덕 거인 힘의 몽둥이",
@@ -392,6 +419,7 @@ export const gameData = {
       weaponActions: ["뇌진탕 충돌"],
       info: "이 썩어가는 의자 다리는 별 것 아닌 듯 보이지만, 그 조각들은 간신히 억제되어 있는 힘으로 진동합니다.",
       damageStat: { maxDamage: 4, minDamage: 1, meanDamage: 2.5 },
+      id: 28,
     },
     {
       name_ko: "쇠나무 곤봉",
@@ -404,6 +432,7 @@ export const gameData = {
       weaponActions: ["뇌진탕 충돌", "등골파괴자"],
       info: "단단하고 질긴 참나무 줄기로 만든 이 클럽은 숲의 향기를 고스란히 간직하고 있습니다.",
       damageStat: { maxDamage: 5, minDamage: 2, meanDamage: 2.5 },
+      id: 29,
     },
     {
       name_ko: "하늘파괴자",
@@ -416,6 +445,7 @@ export const gameData = {
       weaponActions: ["뇌진탕 충돌"],
       info: '"그리하여 그들은 셀레스티아의 빛을 가지리라. 우리가 천상을 활짝 갈라 그것을 가져와야 할지라도."',
       damageStat: { maxDamage: 5, minDamage: 2, meanDamage: 2.5 },
+      id: 30,
     },
     {
       name_ko: "빛나는 두개골 분쇄자",
@@ -428,6 +458,7 @@ export const gameData = {
       weaponActions: ["뇌진탕 충돌"],
       info: "타락한 팔라딘이자 베인의 투사인 실루아 다크호프만 봐도, 선의의 도구가 어떻게 악용될 수 있는지 알 수 있습니다.",
       damageStat: { maxDamage: 9, minDamage: 3, meanDamage: 5.0 },
+      id: 31,
     },
     {
       name_ko: "로비아타의 채찍",
@@ -442,6 +473,7 @@ export const gameData = {
       weaponActions: ["뇌진탕 충돌"],
       info: "채찍이라기보다는 곤봉에 더 가까운 이 무기는 길고 얇은 상처를 남기기 위해 만들어진 톱니 모양의 날을 가지고 있습니다.",
       damageStat: { maxDamage: 12, minDamage: 2, meanDamage: 7.0 },
+      id: 32,
     },
     {
       name_ko: "자이어나이드",
@@ -456,6 +488,7 @@ export const gameData = {
       weaponActions: ["뇌진탕 충돌"],
       info: "언더다크의 깊숙한 곳에서 듀에르가 노예들이 주조한 이 메이스의 머리 부분에는 거미줄 모양의 각인이 새겨져 있습니다. 만지면 얼음처럼 차갑습니다.",
       damageStat: { maxDamage: 7, minDamage: 2, meanDamage: 3.5 },
+      id: 33,
     },
     {
       name_ko: "자연의 올무",
@@ -471,6 +504,7 @@ export const gameData = {
       weaponActions: [],
       info: "물방울 모양의 토파즈가 박힌 새하얀 지팡이. 촉감이 시원합니다.",
       damageStat: { maxDamage: 8, minDamage: 1, meanDamage: 4.5 },
+      id: 34,
     },
     {
       name_ko: "비의 무희",
@@ -486,6 +520,7 @@ export const gameData = {
       weaponActions: [],
       info: "물방울 모양의 토파즈가 박힌 새하얀 지팡이. 촉감이 시원합니다.",
       damageStat: { maxDamage: 8, minDamage: 1, meanDamage: 4.5 },
+      id: 35,
     },
     {
       name_ko: "코렐론의 품위",
@@ -502,6 +537,7 @@ export const gameData = {
       weaponActions: [],
       info: "가볍고 유연한 엘프제 지팡이로, 미스랄 표식은 눈 깜짝할 사이에 마법을 전달할 수 있습니다.",
       damageStat: { maxDamage: 8, minDamage: 1, meanDamage: 4.5 },
+      id: 36,
     },
     {
       name_ko: "마녀의 지팡이",
@@ -517,6 +553,7 @@ export const gameData = {
       weaponActions: [],
       info: "살아있는 벌레들이 반쯤 썩은 지팡이 표면 아래에서 꿈틀댑니다. 그것을 만지는 것만으로도 참을 수 없는 메스꺼움과, 마치 그것이 그것과 닮은 것을 부르는 듯한 낮선 갈망의 물결이 당신을 덮칩니다.",
       damageStat: { maxDamage: 8, minDamage: 1, meanDamage: 4.5 },
+      id: 37,
     },
     {
       name_ko: "비전 축복의 지팡이",
@@ -533,6 +570,7 @@ export const gameData = {
       weaponActions: [],
       info: "이 지팡이의 구석구석까지 먼지가 쌓였지만, 여전히 마음을 달래 주는 오라를 발하고 있습니다. 이것의 예전 주인은 축복을 내려줄 다른 이가 없었기에 치워두고 잊어버린 것입니다.",
       damageStat: { maxDamage: 8, minDamage: 1, meanDamage: 4.5 },
+      id: 38,
     },
     {
       name_ko: "멜프의 첫 번째 지팡이",
@@ -549,6 +587,7 @@ export const gameData = {
       weaponActions: [],
       info: "수상할 정도로 재미있는 이름에도 불구하고(혹은, 그 이름 덕에), 위저드 멜프는 재능 있는 주문시전자이자 비전 분야의 혁신자였습니다. 루나 기사단이라는 단체의 지도자이기도 했습니다.",
       damageStat: { maxDamage: 9, minDamage: 2, meanDamage: 4.5 },
+      id: 39,
     },
     {
       name_ko: "신앙 분쇄기",
@@ -566,6 +605,7 @@ export const gameData = {
       ],
       info: "-",
       damageStat: { maxDamage: 11, minDamage: 2, meanDamage: 5.5 },
+      id: 40,
     },
     {
       name_ko: "하마르흐라프트",
@@ -581,6 +621,7 @@ export const gameData = {
       weaponActions: ["등골파괴자", "뇌진탕 충돌"],
       info: "드워프어 문법은 이해하기 힘들지만, 이 무기의 이름은 첫인상의 중요성을 암시하는 것입니다.",
       damageStat: { maxDamage: 12, minDamage: 2, meanDamage: 7.0 },
+      id: 41,
     },
     {
       name_ko: "천상 파괴자",
@@ -596,6 +637,7 @@ export const gameData = {
       weaponActions: ["등골파괴자", "뇌진탕 충돌"],
       info: "드워프어 문법은 이해하기 힘들지만, 이 무기의 이름은 첫인상의 중요성을 암시하는 것입니다.",
       damageStat: { maxDamage: 12, minDamage: 2, meanDamage: 7.0 },
+      id: 42,
     },
     {
       name_ko: "파멸의 망치",
@@ -611,6 +653,7 @@ export const gameData = {
       weaponActions: ["등골파괴자", "뇌진탕 충돌"],
       info: "이름대로 파멸을 가져옵니다.",
       damageStat: { maxDamage: 12, minDamage: 2, meanDamage: 7.0 },
+      id: 43,
     },
     {
       name_ko: "한파",
@@ -626,6 +669,7 @@ export const gameData = {
       weaponActions: ["관통 공격"],
       info: "강철에서는 목욕탕의 거품처럼 작은 얼음 조각을 볼 수 있으며, 서리가 내린 기쁨의 사각거리는 소리와 함께 터지는 소리도 들을 수 있습니다.",
       damageStat: { maxDamage: 8, minDamage: 2, meanDamage: 5.0 },
+      id: 44,
     },
     {
       name_ko: "수서르 단검",
@@ -638,6 +682,7 @@ export const gameData = {
       weaponActions: ["관통 공격"],
       info: "연기처럼 소용돌이치는 수서르 수액이 단검의 날을 어둡게 칠하고, 그 희생자들을 침묵시킵니다.",
       damageStat: { maxDamage: 5, minDamage: 2, meanDamage: 2.5 },
+      id: 45,
     },
     {
       name_ko: "쓰라린 비탄",
@@ -652,6 +697,7 @@ export const gameData = {
       weaponActions: ["속임수 동작", "관통 공격", "찢어발기기"],
       info: "살인자가 휘두른 무기의 손잡이에는 돌로가 살인을 저지르기 전 흘린 땀이 가죽에 스며든 듯 으스스하고 축축한 온기가 남아 있으며, 그 온기는 여전히 남아 있습니다.",
       damageStat: { maxDamage: 6, minDamage: 3, meanDamage: 2.5 },
+      id: 46,
     },
     {
       name_ko: "매복자",
@@ -667,6 +713,7 @@ export const gameData = {
       weaponActions: ["속임수 동작", "관통 공격"],
       info: "이 검은 루스칸의 바자회를 많이 소유한 엄청난 부유층 창녀들의 모임인 유칼립투스 연맹이 휘두르는 몇 안 되는 희귀 검 중 하나입니다.",
       damageStat: { maxDamage: 7, minDamage: 2, meanDamage: 3.5 },
+      id: 47,
     },
     {
       name_ko: "썰어넘기는 숏소드",
@@ -681,6 +728,7 @@ export const gameData = {
       weaponActions: ["속임수 동작", "관통 공격"],
       info: "너무 날카로워서 말만 해도 상처를 입을 수 있습니다.",
       damageStat: { maxDamage: 7, minDamage: 2, meanDamage: 3.5 },
+      id: 48,
     },
     {
       name_ko: "움켜쥐는 그림자의 검",
@@ -697,6 +745,7 @@ export const gameData = {
       ],
       info: "칼날의 어두운 가장자리에서 그림자의 손가락이 손짓하는 듯합니다.",
       damageStat: { maxDamage: 7, minDamage: 2, meanDamage: 3.5 },
+      id: 49,
     },
     {
       name_ko: "파멸",
@@ -713,6 +762,7 @@ export const gameData = {
       weaponActions: ["속임수 동작", "관통 공격"],
       info: "마법사 오틸루케는 결속 무기와 두 무기가 합쳐질 때 사용자와 합쳐지는 성향에 대해 썼습니다. 그는 또한 결속 무기의 다양한 위험과 그 위험을 감수할 만한 가치가 있는 이점에 대해서도 썼습니다.",
       damageStat: { maxDamage: 7, minDamage: 2, meanDamage: 3.5 },
+      id: 50,
     },
     {
       name_ko: "밤의 창",
@@ -727,6 +777,7 @@ export const gameData = {
       weaponActions: ["돌진 공격"],
       info: "-",
       damageStat: { maxDamage: 9, minDamage: 2, meanDamage: 4.5 },
+      id: 51,
     },
     {
       name_ko: "번쩍이는 끝",
@@ -741,6 +792,7 @@ export const gameData = {
       weaponActions: ["돌진 공격", "관통 공격", "무장 해제 공격"],
       info: "왜 자신보다 두배나 큰 삼지창을 만들었냐는 질문을 듣자, 번개맞이 이르는 간단하게 대답했습니다. '진짜 해야할 질문은 이거야. 왜 안 돼?'",
       damageStat: { maxDamage: 8, minDamage: 1, meanDamage: 4.5 },
+      id: 52,
     },
     {
       name_ko: "조화로운 결투가",
@@ -755,6 +807,7 @@ export const gameData = {
       weaponActions: ["속임수 동작", "관통 공격", "쇠약의 일격"],
       info: "피복을 벗은 이 레이피어의 강철은 주변 표면에 반응하여 경쾌하게 떨리고 울리는데, 이 동작은 마치 공연 전 긴장감에 휩싸인 배우를 떠올리게 합니다.",
       damageStat: { maxDamage: 9, minDamage: 2, meanDamage: 4.5 },
+      id: 53,
     },
     {
       name_ko: "운명의 반전",
@@ -774,6 +827,7 @@ export const gameData = {
       ],
       info: "부자는 진정한 행복을 절대 찾을 수 없다고들 하죠. 이 모닝스타의 목표가 된다면, 더더욱 불행해질 겁니다.",
       damageStat: { maxDamage: 9, minDamage: 2, meanDamage: 4.5 },
+      id: 54,
     },
     {
       name_ko: "레이븐가드의 고행자",
@@ -786,6 +840,7 @@ export const gameData = {
       weaponActions: ["심장 파괴자", "뇌진탕 충돌"],
       info: "레이븐가드 공작의 아버지는 손으로 일하고 투덜거리며 소통하는 사람이었습니다. 아들은 마음속으로 더 나은 사람이 되겠다고 다짐했습니다. 하지만 윌이 태어났을 때 레이븐가드는 아들에게서 멀어지는 묘한 중력을 느꼈습니다.",
       damageStat: { maxDamage: 10, minDamage: 3, meanDamage: 4.5 },
+      id: 55,
     },
     {
       name_ko: "보이지 않는 위험",
@@ -800,6 +855,7 @@ export const gameData = {
       weaponActions: ["돌진 공격", "관통 공격", "대비"],
       info: "네, 하지만 정확히 무엇이 당신을 때리고 있나요?",
       damageStat: { maxDamage: 11, minDamage: 2, meanDamage: 5.5 },
+      id: 56,
     },
     {
       name_ko: "돌파하는 파이크스태프",
@@ -812,6 +868,7 @@ export const gameData = {
       weaponActions: ["돌진 공격", "관통 공격", "대비"],
       info: "이 파이크에서 강력한 심장 박동처럼 뇌진탕 에너지가 쿵쾅거립니다.",
       damageStat: { maxDamage: 16, minDamage: 4, meanDamage: 8.0 },
+      id: 57,
     },
     {
       name_ko: "부알의 낫",
@@ -826,6 +883,7 @@ export const gameData = {
       weaponActions: ["찢어발기기"],
       info: "무시무시한 부알의 상상할 수조차 없는 권능이 주입되었다!",
       damageStat: { maxDamage: 8, minDamage: 2, meanDamage: 5.0 },
+      id: 58,
     },
     {
       name_ko: "수서르 낫",
@@ -838,6 +896,7 @@ export const gameData = {
       weaponActions: ["찢어발기기"],
       info: "-",
       damageStat: { maxDamage: 5, minDamage: 2, meanDamage: 2.5 },
+      id: 59,
     },
     {
       name_ko: "파도어머니의 낫",
@@ -852,6 +911,7 @@ export const gameData = {
       weaponActions: ["찢어발기기"],
       info: "이 낫의 곡선은 격랑의 바다 위에 떠 있는 초승달을 연상시킵니다.",
       damageStat: { maxDamage: 10, minDamage: 4, meanDamage: 5.0 },
+      id: 60,
     },
     {
       name_ko: "아다만틴 시미터",
@@ -867,6 +927,7 @@ export const gameData = {
       weaponActions: ["속임수 동작", "찢어발기기"],
       info: "-",
       damageStat: { maxDamage: 7, minDamage: 2, meanDamage: 3.5 },
+      id: 61,
     },
     {
       name_ko: "가시 검",
@@ -882,6 +943,7 @@ export const gameData = {
       weaponActions: ["속임수 동작", "찢어발기기"],
       info: "이 칼날은 뱀의 송곳니처럼 날카롭고 가늘며 끔찍한 관통를 가할 수 있습니다.",
       damageStat: { maxDamage: 7, minDamage: 2, meanDamage: 3.5 },
+      id: 62,
     },
     {
       name_ko: "짠물 시미터",
@@ -894,6 +956,7 @@ export const gameData = {
       weaponActions: ["속임수 동작", "찢어발기기"],
       info: "나무를 떨게 하소서, 이건 악마처럼 지독한 칼날입니다.",
       damageStat: { maxDamage: 8, minDamage: 3, meanDamage: 3.5 },
+      id: 63,
     },
     {
       name_ko: "아다만틴 롱소드",
@@ -909,6 +972,7 @@ export const gameData = {
       weaponActions: ["자루 치기", "찢어발기기", "돌진 공격"],
       info: "이 무기는 무거운데도 휘두르는 데 별 힘이 들지 않습니다. 백 명의 적을 쓰러트릴 준비가 된 무기입니다.",
       damageStat: { maxDamage: 11, minDamage: 2, meanDamage: 5.5 },
+      id: 64,
     },
     {
       name_ko: "억압받는 영혼의 검",
@@ -926,6 +990,7 @@ export const gameData = {
       ],
       info: "강철에는 죽은 영혼의 파편이 갇혀 있습니다. 분노, 힘, 희망, 두려움 등 다양한 이유로 일리시드의 주인과 맞서 싸웠지만 모두 이 칼날에 쓰러졌습니다. 이제 그들은 영원히 갇혀 억압자들을 도와야만 합니다.",
       damageStat: { maxDamage: 11, minDamage: 2, meanDamage: 5.5 },
+      id: 65,
     },
     {
       name_ko: "라레시안의 분노",
@@ -943,6 +1008,7 @@ export const gameData = {
       ],
       info: "놀라울 정도로 가벼운 이 검은 사악한 오크의 심장을 관통하는 코렐론 라레시아의 무정부 상태의 성검처럼 쉽게 성의 강철판을 찢어버립니다.",
       damageStat: { maxDamage: 11, minDamage: 2, meanDamage: 5.5 },
+      id: 66,
     },
     {
       name_ko: "팔라 알루베",
@@ -958,6 +1024,7 @@ export const gameData = {
       ],
       info: "자루 치기, 찢어발기기, 돌진 공격",
       damageStat: { maxDamage: 11, minDamage: 2, meanDamage: 5.5 },
+      id: 67,
     },
     {
       name_ko: "잔인한 독침",
@@ -973,6 +1040,7 @@ export const gameData = {
       weaponActions: ["자루 치기", "찢어발기기", "돌진 공격"],
       info: "드라이더로 변할 때 겪는 트라우마는 신경을 잃게 되어 금세 잊힙니다. 이 검은 끔찍한 방식을 따릅니다. 검에는 독을 보충하는 독샘이 내장돼 있으며, 거미줄에 갇힌 적에게만 사용할 수 있습니다.",
       damageStat: { maxDamage: 17, minDamage: 3, meanDamage: 9.0 },
+      id: 68,
     },
     {
       name_ko: "황제의 검",
@@ -988,6 +1056,7 @@ export const gameData = {
       weaponActions: ["자루 치기", "찢어발기기", "돌진 공격"],
       info: "검이 우아한 광택을 뽐냅니다. 검신에 다음과 같은 글귀가 새겨져 있습니다: '나의 눈은 고향에서 멀리 떨어져 머나먼 안코롬의 해안으로 향한다.'",
       damageStat: { maxDamage: 12, minDamage: 3, meanDamage: 5.5 },
+      id: 69,
     },
     {
       name_ko: "블랙가드의 검",
@@ -1002,6 +1071,7 @@ export const gameData = {
       weaponActions: ["자루 치기", "찢어발기기", "돌진 공격"],
       info: "우정과 친절의 끈을 모두 버린 자가 휘두르던 이 검은 광기 어린 에너지로 가득 차 있습니다. 이 검은 뼈를 깎을 때 만족감을 전달하는 것 같습니다.",
       damageStat: { maxDamage: 16, minDamage: 4, meanDamage: 8.0 },
+      id: 70,
     },
     {
       name_ko: "온도발전 도끼",
@@ -1016,6 +1086,7 @@ export const gameData = {
       weaponActions: ["회전베기", "찢어발기기", "발목 공격"],
       info: "노움 혁신으로 디자인된 이 무기는 적에게 도끼를 휘두를 때마다 역동적인 코어가 회전하며 살아 움직입니다.",
       damageStat: { maxDamage: 11, minDamage: 2, meanDamage: 5.5 },
+      id: 71,
     },
     {
       name_ko: "하모늄 미늘창",
@@ -1028,6 +1099,7 @@ export const gameData = {
       weaponActions: ["돌진 공격", "찢어발기기", "회전베기"],
       info: "미늘창에 새겨진 백금 상감이 마치 이 세상의 소리가 아닌 것 같은 도 음을 내며 착용자의 원기를 북돋아 주지만, 정신력을 깎아내립니다. 마치 마땅히 있어야 할 고향이 너무 멀리 있다는 듯, 너무나도 구슬픈 소리입니다.",
       damageStat: { maxDamage: 11, minDamage: 2, meanDamage: 5.5 },
+      id: 72,
     },
     {
       name_ko: "비애",
@@ -1042,6 +1114,7 @@ export const gameData = {
       weaponActions: ["돌진 공격", "찢어발기기", "대비"],
       info: "흘리는 피 한 방울마다 한 조각의 영혼이 사라지고, 오직 후회만이 남는다.",
       damageStat: { maxDamage: 11, minDamage: 2, meanDamage: 5.5 },
+      id: 73,
     },
     {
       name_ko: "괴물 학살자 협도",
@@ -1057,6 +1130,7 @@ export const gameData = {
       weaponActions: ["돌진 공격", "열참", "대비"],
       info: "괴물을 잡는 건 심약한 자는 해낼 수 없는 진귀한 소명입니다. 절제와 규율은 필수이며, 끝에 뾰족한 게 달린 아주 큰 막대기까지 필요한 경우가 많습니다. 창의 가장 좋은 점은 전장에서 벌어지는 끔찍한 순간들로부터 멀찌감치 떨어질 수 있다는 것입니다.",
       damageStat: { maxDamage: 11, minDamage: 2, meanDamage: 5.5 },
+      id: 74,
     },
     {
       name_ko: "드레이크 식도 협도",
@@ -1072,6 +1146,7 @@ export const gameData = {
       weaponActions: ["돌진 공격", "열참", "절단"],
       info: "비전 지식의 드래곤 여신 케레스카가 붉은 거미 무리에 맞서 싸우는 드래곤본에게 선물한 협도입니다. 그날 밤 어둠의 거래가 끝나기도 전애 거미의 다리는 뒤틀리고 까맣게 변했습니다.",
       damageStat: { maxDamage: 12, minDamage: 3, meanDamage: 5.5 },
+      id: 75,
     },
     {
       name_ko: "달빛 협도",
@@ -1089,6 +1164,7 @@ export const gameData = {
       ],
       info: "고귀한 에일린과 그녀가 섬기는 찬란한 여신이 내린 선물입니다. 저녁마다 창공을 오르는 밤의 등불과 같은 아름다운 은백색 빛이 이 무기의 윤곽을 따라 반짝입니다.",
       damageStat: { maxDamage: 16, minDamage: 4, meanDamage: 8.0 },
+      id: 76,
     },
     {
       name_ko: "피투성이 대형 도끼 / 피투성이 그레이트액스",
@@ -1103,6 +1179,7 @@ export const gameData = {
       weaponActions: ["회전베기", "찢어발기기", "준비"],
       info: "갈색으로 얼룩졌고 쇠 냄새가 진동하는 이 그레이트액스는 정신나간 살인마의 것이었고, 그 이름은 모든 역사서에서 마법적으로 지워졌습니다.",
       damageStat: { maxDamage: 17, minDamage: 3, meanDamage: 9.0 },
+      id: 77,
     },
     {
       name_ko: "수호의 그레이트액스",
@@ -1117,6 +1194,7 @@ export const gameData = {
       weaponActions: ["회전베기", "찢어발기기", "준비"],
       info: "이 도끼의 힘은 수염과 도끼의 가장자리, 그리고 도끼를 휘두르는 사람 사이에 흐르는 변화무쌍한 비전 마법에 있습니다.",
       damageStat: { maxDamage: 14, minDamage: 3, meanDamage: 6.5 },
+      id: 78,
     },
     {
       name_ko: "수서르 대검",
@@ -1129,6 +1207,7 @@ export const gameData = {
       weaponActions: ["자루 치기", "찢어발기기", "회전베기"],
       info: "수서르 나무의 뿌리가 이 검의 손잡이에서 날까지 뻗어 있습니다. 그 뿌리는 마법을 마시길 갈망해, 타격하는 모든 크리쳐를 침묵시킵니다.",
       damageStat: { maxDamage: 13, minDamage: 3, meanDamage: 7.0 },
+      id: 79,
     },
     {
       name_ko: "조고랄의 대검",
@@ -1146,6 +1225,7 @@ export const gameData = {
       ],
       info: "견고한 성에서 단조한 강철과 견고한 가죽 그립이 어우러진 이 거대한 검은 거인을 단 한번에 내장을 제거할 수 있습니다.",
       damageStat: { maxDamage: 13, minDamage: 3, meanDamage: 7.0 },
+      id: 80,
     },
     {
       name_ko: "영혼분쇄자 그레이트소드",
@@ -1166,6 +1246,7 @@ export const gameData = {
       ],
       info: "날카로운 금속이 당신에게 속삭입니다. 애원한다. 저주... 죽임당한 적들의 메아리.",
       damageStat: { maxDamage: 17, minDamage: 4, meanDamage: 9.5 },
+      id: 81,
     },
     {
       name_ko: "그림자 등불",
@@ -1180,6 +1261,7 @@ export const gameData = {
       weaponActions: [],
       info: "등불 안의 그림자 고치에 둘러싸인 뒤틀린 픽시는 기형적인 번데기처럼 입을 벌린 채 누워 있고, 회색빛 혀 위로 같은 그림자가 기어다니고 있습니다.",
       damageStat: { maxDamage: 6, minDamage: 1, meanDamage: 3.5 },
+      id: 82,
     },
     {
       name_ko: "아다만틴 메이스",
@@ -1195,6 +1277,7 @@ export const gameData = {
       weaponActions: ["뇌진탕 충돌"],
       info: "-",
       damageStat: { maxDamage: 7, minDamage: 2, meanDamage: 3.5 },
+      id: 83,
     },
     {
       name_ko: "부서진 도리깨",
@@ -1209,6 +1292,7 @@ export const gameData = {
       weaponActions: ["뇌진탕 충돌"],
       info: "뼈와 핏덩이의 뭉치, 그리고 영혼을 꿰뚫는 데몬의 존재가 플린드가 들고 있던 플레일의 남은 전부입니다. 고약하게 상처입히는, 쓸만한 메이스가 될 것 같습니다.",
       damageStat: { maxDamage: 8, minDamage: 3, meanDamage: 3.5 },
+      id: 84,
     },
     {
       name_ko: "주문 폭죽",
@@ -1224,6 +1308,7 @@ export const gameData = {
       weaponActions: [],
       info: "번개맞이 이르는 옛 연인이자 미스트라의 클레릭인 레노어에게 주문 폭죽을 주려 했습니다. 하지만 노움이 클레릭의 곁으로 돌아왔을 때, 그는 탑이 텅 비었음을 알게 됩니다. 오직 먼지와 버려진 실험기구만이 남아 있을 뿐이었습니다.",
       damageStat: { maxDamage: 8, minDamage: 1, meanDamage: 4.5 },
+      id: 85,
     },
     {
       name_ko: "창조의 메아리",
@@ -1239,6 +1324,7 @@ export const gameData = {
       weaponActions: [],
       info: "이 지팡이는 에너지로 맥동하며, 재빠르게 당신의 심장 박동에 맞춰집니다",
       damageStat: { maxDamage: 8, minDamage: 1, meanDamage: 4.5 },
+      id: 86,
     },
     {
       name_ko: "불협화음",
@@ -1254,6 +1340,7 @@ export const gameData = {
       weaponActions: [],
       info: "지팡이 손잡이에는 천둥을 뜻하는 여러 단어가 새겨져 있습니다. 노움어, 요정어, 엘프어, 천족어, 심지어 원시 언어로도 적혀 있죠. 이 모든 단어가 모여 천둥이라는 단어가 만들어집니다.",
       damageStat: { maxDamage: 9, minDamage: 2, meanDamage: 4.5 },
+      id: 87,
     },
     {
       name_ko: "빅보이의 입질 장난감",
@@ -1269,6 +1356,7 @@ export const gameData = {
       weaponActions: ["뇌진탕 충돌", "속임수 동작"],
       info: "마법사 빅비가 만든 유물로 오해받기도 하는 이 지팡이는 아이러니하게도 빅비의 개 빅보이를 물기 위해 만들어진 물건입니다.",
       damageStat: { maxDamage: 9, minDamage: 2, meanDamage: 4.5 },
+      id: 88,
     },
     {
       name_ko: "황금 새끼용 지팡이",
@@ -1281,6 +1369,7 @@ export const gameData = {
       weaponActions: [],
       info: "이 지팡이를 집어삼키는 불은 허공을 빨아들이는 듯하며, 한 번도 어두운 나무를 태우지 않습니다.",
       damageStat: { maxDamage: 13, minDamage: 3, meanDamage: 7.0 },
+      id: 89,
     },
     {
       name_ko: "중단의 지팡이",
@@ -1296,6 +1385,7 @@ export const gameData = {
       weaponActions: [],
       info: "이 지팡이에서는 파괴적인 비전 에너지가 콧노래를 내며 주변의 주문 시전자를 혼란에 빠뜨립니다.",
       damageStat: { maxDamage: 10, minDamage: 3, meanDamage: 4.5 },
+      id: 90,
     },
     {
       name_ko: "아스카틀라의 절망",
@@ -1311,6 +1401,7 @@ export const gameData = {
       weaponActions: [],
       info: "장식을 만져보니 로로아칸의 성질이 지팡이에 고스란히 녹아들어 있는 것이 분명합니다. 로로아칸의 고향에 있는 폭풍 등불처럼 밝은 비건디와 카민 색조가 머릿속으로 흘러듭니다.",
       damageStat: { maxDamage: 10, minDamage: 3, meanDamage: 4.5 },
+      id: 91,
     },
     {
       name_ko: "비겁자 지팡이",
@@ -1327,6 +1418,7 @@ export const gameData = {
       weaponActions: [],
       info: "마법사의 후원자가 부여하는 마법의 질감은 후원자에 따라 크게 달라집니다. 예를 들어, 일반적인 엘드리치 후원자는 어딘가에서 눈알이 얼룩덜룩한 촉수를 작동시킬 것입니다.",
       damageStat: { maxDamage: 10, minDamage: 3, meanDamage: 4.5 },
+      id: 92,
     },
     {
       name_ko: "흰참나무",
@@ -1342,6 +1434,7 @@ export const gameData = {
       weaponActions: ["넘어뜨리기"],
       info: "실바너스의 힘이 깃든 지팡이로, 자연을 지키는 데 앞장서는 신앙 감시자에게 주어집니다.",
       damageStat: { maxDamage: 8, minDamage: 1, meanDamage: 4.5 },
+      id: 93,
     },
     {
       name_ko: "부식의 도리깨",
@@ -1358,6 +1451,7 @@ export const gameData = {
       ],
       info: "산성이 계속 잔을 부식시키는 바람에 독을 타는 게 훨씬 더 안정적이란 걸 깨달은 암살자들은 오래 전에 산성 물질을 쓰는 걸 그만두었습니다.",
       damageStat: { maxDamage: 9, minDamage: 2, meanDamage: 4.5 },
+      id: 94,
     },
     {
       name_ko: "수호자의 도리깨",
@@ -1374,6 +1468,7 @@ export const gameData = {
       weaponActions: ["뇌진탕 충돌", "쇠약의 일격"],
       info: "이 무기는 악마 벨히펫을 물리친 승리를 기념하기 위해 만들어졌습니다. 그 후 이스트헤이븐에서 너무 멀리 떨어져서 주민들은 마을의 과거를 오랫동안 잊고 살았습니다.",
       damageStat: { maxDamage: 9, minDamage: 2, meanDamage: 4.5 },
+      id: 95,
     },
     {
       name_ko: "영겁의 플레일",
@@ -1390,6 +1485,7 @@ export const gameData = {
       weaponActions: ["뇌진탕 충돌", "쇠약의 일격"],
       info: "호전적인 라크샤샤가 만들고 드아니스 경이라는 영리한 귀족의 세심한 감시 아래 한동한 보관했던 이 도리깨는 절대적인 파괴의 도구이자 다용도로 사용할 수 있는 도구입니다.",
       damageStat: { maxDamage: 9, minDamage: 2, meanDamage: 4.5 },
+      id: 96,
     },
     {
       name_ko: "쥐방망이",
@@ -1402,6 +1498,7 @@ export const gameData = {
       weaponActions: ["뇌진탕 충돌"],
       info: "못이 박힌 클럽. 고전적이죠.",
       damageStat: { maxDamage: 9, minDamage: 2, meanDamage: 4.5 },
+      id: 97,
     },
     {
       name_ko: "뇌진탕 걸린 놈",
@@ -1417,6 +1514,7 @@ export const gameData = {
       weaponActions: ["뇌진탕 충돌", "등골파괴자", "회전베기"],
       info: "이거... *딸꾹* 보이지... 이 아이템의 가장, 가장 중요한 *딸꾹* ... 점은 *연신 트림을 한다* ... 씨발, 클럽이라는 거지. 마시라고.",
       damageStat: { maxDamage: 9, minDamage: 2, meanDamage: 4.5 },
+      id: 98,
     },
     {
       name_ko: "케서릭의 워해머",
@@ -1429,6 +1527,7 @@ export const gameData = {
       weaponActions: ["등골파괴자", "뇌진탕 충돌", "쇠약의 일격"],
       info: "이 망치의 무게는 머리 아래쪽의 마법에 걸린 흑요석에 집중되어 있습니다. 매일 밤 잠자리에 들기 전, 케서릭은 망치를 슬며시 쳐다보며 그 돌에 대해 생각하곤 했는데, 어떤 알 수 없는 마음의 힘이 그 무게를 지탱하는지 궁금해했습니다.",
       damageStat: { maxDamage: 15, minDamage: 3, meanDamage: 8.0 },
+      id: 99,
     },
     {
       name_ko: "충전결속 워해머",
@@ -1445,6 +1544,7 @@ export const gameData = {
       weaponActions: ["등골파괴자", "뇌진탕 충돌", "쇠약의 일격"],
       info: "이 결속 무기를 휘두르면 손 전체에 기묘하고 멋진 패턴으로 에너지가 갈라지는데, 마치 손의 혈맥이 청백색 번개 구름처럼 마블링된 것처럼 느껴집니다.",
       damageStat: { maxDamage: 11, minDamage: 2, meanDamage: 5.5 },
+      id: 100,
     },
     {
       name_ko: "광대의 망치",
@@ -1459,6 +1559,7 @@ export const gameData = {
       weaponActions: ["등골파괴자", "뇌진탕 충돌", "쇠약의 일격"],
       info: "이 망치는 화려한 역사를 가지고 있습니다. 아쉽게도 이 망치를 쥐었을 때 경고음이 울리지 않습니다.",
       damageStat: { maxDamage: 12, minDamage: 3, meanDamage: 5.5 },
+      id: 101,
     },
     {
       name_ko: "시체분쇄기",
@@ -1475,6 +1576,7 @@ export const gameData = {
       ],
       info: "믿을 수 있고 신뢰할 수 있는, 세상의 황량한 곳을 횡단하는 동안 이보다 더 존경할 만한 동료는 없을 것입니다.",
       damageStat: { maxDamage: 18, minDamage: 5, meanDamage: 9.5 },
+      id: 102,
     },
     {
       name_ko: "돌로어 아마루스",
@@ -1489,6 +1591,7 @@ export const gameData = {
       weaponActions: ["기만 공격", "관통 공격", "열참"],
       info: "한때 살육자가 휘두른 무기로, 손잡이에는 돌로어가 살해하기 전 흘린 땀이 가죽에 스며든 듯 섬뜩하고 축축한 온기가 지금까지도 남아 있습니다.",
       damageStat: { maxDamage: 5, minDamage: 2, meanDamage: 2.5 },
+      id: 103,
     },
     {
       name_ko: "광시곡",
@@ -1504,6 +1607,7 @@ export const gameData = {
       weaponActions: ["관통의 일격"],
       info: "카사도어의 시 사랑은 고향에서 죽은 어린아이의 벌거벗은 배에 새겨진 시 한 수를 읽었을 때 시작되었습니다. 아이는 나무의 가장 낮은 가지에 매달려 있었습니다. 카사도어는 시를 읽고 아이를 바라본 뒤, 이것이 바로 자신이 추구해야 할 예술임을 깨달았습니다.",
       damageStat: { maxDamage: 5, minDamage: 2, meanDamage: 2.5 },
+      id: 104,
     },
     {
       name_ko: "부동제조기",
@@ -1516,6 +1620,7 @@ export const gameData = {
       weaponActions: ["자루 치기", "관통 공격", "찢어발기기"],
       info: "이 단검의 뒤틀린 칼날은 가능한 한 많이 상처를 내기 좋도록 설계되어 있어, 불운한 희생자에게 칼날의 마비 독을 간단히 흘려 넣을 수 있도록 합니다.",
       damageStat: { maxDamage: 6, minDamage: 3, meanDamage: 2.5 },
+      id: 105,
     },
     {
       name_ko: "생명력 탈취의 검",
@@ -1530,6 +1635,7 @@ export const gameData = {
       weaponActions: ["속임수 동작", "관통 공격"],
       info: "위압감이 느껴지는 이 잔악한 무기의 강철 속에는 마법이 걸린 금속 합금이 들어 있습니다. 이 무기는 마치 깊은 늪의 거머리처럼 희생자를 맛보길 기다리고 있으며, 검을 쥔 자의 원기를 회복하고 적에게 고통을 가할 기회를 노리고 있습니다.",
       damageStat: { maxDamage: 8, minDamage: 3, meanDamage: 3.5 },
+      id: 106,
     },
     {
       name_ko: "지하 미궁 왕의 나이프",
@@ -1545,6 +1651,7 @@ export const gameData = {
       weaponActions: ["속임수 동작", "관통 공격"],
       info: "미친 마법사 할라스터 블랙클록의 영역에서 빼앗은 이 칼은 듀에르가 왕의 귀중한 유품이 되었습니다.",
       damageStat: { maxDamage: 8, minDamage: 3, meanDamage: 3.5 },
+      id: 107,
     },
     {
       name_ko: "파도의 삼지창",
@@ -1559,6 +1666,7 @@ export const gameData = {
       weaponActions: ["돌진 공격", "관통 공격", "무장 해제 공격"],
       info: "바다의 여신 움벌리는 매우 변덕스럽고 영리하며, 그녀의 영역에서 알 수 있듯이 가장자리가 젖어 있지 않습니다. 그녀는 종종 선원들에게 배와 화물, 심지어는 선원 자신들에게도 희생적인 공물을 요구합니다.",
       damageStat: { maxDamage: 9, minDamage: 2, meanDamage: 4.5 },
+      id: 108,
     },
     {
       name_ko: "신성한 별",
@@ -1579,6 +1687,7 @@ export const gameData = {
       ],
       info: "이 물건의 힘은 어느 신이 아닌, 믿음 그 자체에서 비롯됐습니다. 이 철퇴는 스스로가 무언가를 때리는데 매우 재능이 있다고 믿었고, 그 말대로 입니다. 폭력에 있어서 믿음이란 매우 강력합니다.",
       damageStat: { maxDamage: 14, minDamage: 4, meanDamage: 7.0 },
+      id: 109,
     },
     {
       name_ko: "펠로르 태양 검",
@@ -1593,6 +1702,7 @@ export const gameData = {
       weaponActions: ["속임수 동작", "관통 공격", "쇠약의 일격"],
       info: "피투성이 손 카스의 목을 벤 검은 태양의 신 펠로르에 의해 선택을 받았고, 언데드에 대항하는 정의로운 일을 하게 되었습니다.",
       damageStat: { maxDamage: 13, minDamage: 3, meanDamage: 7.0 },
+      id: 110,
     },
     {
       name_ko: "지옥의 레이피어",
@@ -1609,6 +1719,7 @@ export const gameData = {
       weaponActions: ["속임수 동작", "관통 공격", "쇠약의 일격"],
       info: "영혼은 칼날과도 같습니다. 좋은 것은 주의 깊게 돌봐야 하고, 나쁜 것은 비 속에서 썩어가는 게 합당합니다. 가늘고 불꽃을 머금은 이 칼날은 강철의 형태로 요약된 윌의 영혼입니다.",
       damageStat: { maxDamage: 10, minDamage: 3, meanDamage: 4.5 },
+      id: 111,
     },
     {
       name_ko: "벨름",
@@ -1621,6 +1732,7 @@ export const gameData = {
       weaponActions: ["속임수 동작", "찢어발기기", "회오리 바람 공격"],
       info: "희미해졌지만 여전히 선명히 남아있는 카라-투란 대장장이의 마크가 이 정교한 검의 검자루를 장식하고 있습니다. 로빈의 날개처럼 가볍고 노움의 재치처럼 빠른 이 무기는 수많은 적을 쓰러트렸으며, 올바른 손에 쥐어진다면 앞으로도 계속 그럴 것입니다.",
       damageStat: { maxDamage: 8, minDamage: 3, meanDamage: 3.5 },
+      id: 112,
     },
     {
       name_ko: "저스티시어의 시미터",
@@ -1639,6 +1751,7 @@ export const gameData = {
       ],
       info: "이 가벼운 곡선형 칼날은 어둠이 내리쬐는 것처럼 독특하고 용서할 수 없습니다.",
       damageStat: { maxDamage: 10, minDamage: 3, meanDamage: 4.5 },
+      id: 113,
     },
     {
       name_ko: "경계의 미늘창",
@@ -1654,6 +1767,7 @@ export const gameData = {
       weaponActions: ["돌진 공격", "찢어발기기", "회전베기"],
       info: "이 미늘창의 변형된 디자인은 개발 초기 단계에서 포지마스터에 의해 폐기되었습니다. 미늘창이 계속 자신을 표현했기 때문입니다. '경보!' 위험에 처하명 비명을 지르곤 했죠. '잠재력이 희망의 노래처럼 나를 채운다!' 승리의 포효가 울려 퍼졌습니다.",
       damageStat: { maxDamage: 16, minDamage: 4, meanDamage: 8.0 },
+      id: 114,
     },
     {
       name_ko: "춤추는 산들바람",
@@ -1666,6 +1780,7 @@ export const gameData = {
       weaponActions: ["돌진 공격", "찢어발기기", "대비", "회오리 바람", "공격"],
       info: "칼날에 핏자국이 스며든 모습이 마치 협도가 피를 마신 듯합니다.",
       damageStat: { maxDamage: 12, minDamage: 3, meanDamage: 5.5 },
+      id: 115,
     },
     {
       name_ko: "세탄",
@@ -1681,6 +1796,7 @@ export const gameData = {
       weaponActions: ["회전베기", "찢어발기기", "준비"],
       info: "이 도끼가 공중을 가로질러 불행한 머리를 향해 날아갈 때, 영적인 상대방의 호루라기 소리는 결코 뒤쳐지지 않습니다.",
       damageStat: { maxDamage: 14, minDamage: 3, meanDamage: 6.5 },
+      id: 116,
     },
     {
       name_ko: "적 파괴자",
@@ -1700,6 +1816,7 @@ export const gameData = {
       ],
       info: "누구든 이 도끼를 맞으면 유리 망치의 수명 정도밖에 살 수 없게 됩니다.",
       damageStat: { maxDamage: 20, minDamage: 4, meanDamage: 10.0 },
+      id: 117,
     },
     {
       name_ko: "혼돈의 검",
@@ -1712,6 +1829,7 @@ export const gameData = {
       weaponActions: ["자루 치기", "찢어발기기", "회전베기", "돌진 공격"],
       info: "고라이온  의 와드의 형제이자 사악한 신 바알의 자식인  사레복  의 검입니다. 그 힘의 대부분은 그와 함께 사라졌지만, 검은 여전히 강력하며 사악한 빛으로 빛납니다.",
       damageStat: { maxDamage: 14, minDamage: 4, meanDamage: 7.0 },
+      id: 118,
     },
     {
       name_ko: "철회의 횃불",
@@ -1724,6 +1842,7 @@ export const gameData = {
       weaponActions: [],
       info: "실력 있는 퇴마사의 필수품으로, 옅은 불꽃이 추방되지 않은 유령을 파괴합니다.",
       damageStat: { maxDamage: 13, minDamage: 4, meanDamage: 7.5 },
+      id: 119,
     },
     {
       name_ko: "시녀의 메이스",
@@ -1736,6 +1855,7 @@ export const gameData = {
       weaponActions: ["뇌진탕 충돌"],
       info: "이 무기는 룰스의 암살자들이 감히 거미 여왕에게 등돌린 이단자들을 쓰러트리기 위해 고안한 것입니다. 하지만 아무리 훌륭한 무기라도 신실한 샤의 추종자들을 상대로는 무용지물일 뿐이었습니다.",
       damageStat: { maxDamage: 14, minDamage: 4, meanDamage: 7.0 },
+      id: 120,
     },
     {
       name_ko: "백열 지팡이",
@@ -1754,6 +1874,7 @@ export const gameData = {
       weaponActions: [],
       info: "이 지팡이의 길이에 새겨진 에칭은 불꽃으로 쓰여진 원시 불의 문자를 붉게 물들입니다.",
       damageStat: { maxDamage: 8, minDamage: 1, meanDamage: 4.5 },
+      id: 121,
     },
     {
       name_ko: "비탄하는의 서리",
@@ -1771,6 +1892,7 @@ export const gameData = {
       weaponActions: [],
       info: "지팡이 주위로 싸늘한 서릿바람이 감돕니다. 오랜 기다림 끝에 하나로 합쳐진 힘이 해방의 순간을 고대하고 있습니다.",
       damageStat: { maxDamage: 13, minDamage: 3, meanDamage: 7.0 },
+      id: 122,
     },
     {
       name_ko: "사령계 애호의 지팡이",
@@ -1787,6 +1909,7 @@ export const gameData = {
       weaponActions: [],
       info: "아버지 티보와 달리 체리쉬 할로우는 좀비를 두려워하지 않았어요. 체리쉬는 상어, 감초, 벽지, 네더릴 유물, 모자(큰 것), 실외, 실내, 모자(작은 것), 우유 등을 무서워했습니다.",
       damageStat: { maxDamage: 14, minDamage: 4, meanDamage: 7.0 },
+      id: 123,
     },
     {
       name_ko: "양 지팡이",
@@ -1802,6 +1925,7 @@ export const gameData = {
       weaponActions: [],
       info: "알 수 없는 대마법사가 만든 것입니다. 신원을 확인할 수 있는 휘장은 나오지 않습니다.  지팡이는 느리고 맹렬한 맥박으로 쿵쾅거립니다. 이 지팡이는 무기에 이름붙인 나선형 뿔을 가진 생물로부터 충격적인 힘을 끌어냅니다.",
       damageStat: { maxDamage: 10, minDamage: 3, meanDamage: 4.5 },
+      id: 124,
     },
     {
       name_ko: "주문력의 지팡이",
@@ -1818,6 +1942,7 @@ export const gameData = {
       weaponActions: [],
       info: "세계 곳곳의 여러 대마법사를 거치며 묻은 손때만 빼면 완벽한 상태의 유물입니다.",
       damageStat: { maxDamage: 10, minDamage: 3, meanDamage: 4.5 },
+      id: 125,
     },
     {
       name_ko: "재난",
@@ -1836,6 +1961,7 @@ export const gameData = {
       weaponActions: [],
       info: "지팡이로 돌을 가볍게 세 번 두드리자, 카사도어의 궁정은 공포에 휩싸였습니다. 그건 폭풍이 다가오고 있다는 신호였고, 그들이 할 수 있는 건 그저 몸을 움츠리고 폭풍의 분노가 자신들에게 쏟아지지 않길 기도하는 것 뿐이었습니다.",
       damageStat: { maxDamage: 10, minDamage: 3, meanDamage: 4.5 },
+      id: 126,
     },
     {
       name_ko: "드워프 투척기",
@@ -1851,6 +1977,7 @@ export const gameData = {
       weaponActions: ["등골파괴자", "뇌진탕 충돌", "쇠약의 일격"],
       info: "최초의 드워프 투척기는 의도치 않게 만들어졌습니다. 그 순간은 드워프 연대기에서 이렇게 기록되었습니다: '아, 안 되겠네. 또 하나의 디자인이 망했군... 이제... 어...  윙윙거리는 휘파람 소리가 들리는 사람 없나? 점점 커지는데?  '",
       damageStat: { maxDamage: 12, minDamage: 3, meanDamage: 5.5 },
+      id: 127,
     },
     {
       name_ko: "적 파괴자",
@@ -1867,6 +1994,7 @@ export const gameData = {
       weaponActions: ["등골파괴자", "뇌진탕 충돌"],
       info: "판결을 내리는 판사의 지친 망치처럼 무겁고 말도 안 되는 반대입니다.",
       damageStat: { maxDamage: 14, minDamage: 4, meanDamage: 7.0 },
+      id: 128,
     },
     {
       name_ko: "피의 갈증",
@@ -1886,6 +2014,7 @@ export const gameData = {
       weaponActions: ["관통 공격"],
       info: "살인의 군주가 항상 군주였던 것은 아닙니다. 한때는 그저 소소한 살인자였죠. 발두리아의 뒷골목에서 처음 바알이 피를 뽑았을 때, 피는 땅에 떨어져 오래 머물렀어요. 그가 승천했을 때, 이 마른 핏방울이 자라면서 뒤틀리고 날카로워졌죠.",
       damageStat: { maxDamage: 10, minDamage: 4, meanDamage: 5.0 },
+      id: 129,
     },
     {
       name_ko: "선홍빛 장난",
@@ -1902,6 +2031,7 @@ export const gameData = {
       weaponActions: ["속임수 동작", "관통 공격"],
       info: "어렸을 때 그녀는 불쾌함과 가학성을 가지고 놀았습니다. 아이들은 종종 이것에서 성장하고 취미를 얻습니다. 오린의 경우, 잔인함에 대한 취향이 발효되었고 어떤 식으로든 취미를 찾았습니다. 비명을 지르는 것.",
       damageStat: { maxDamage: 16, minDamage: 5, meanDamage: 8.5 },
+      id: 130,
     },
     {
       name_ko: "결투사의 특권",
@@ -1919,6 +2049,7 @@ export const gameData = {
       weaponActions: ["약화 공격", "관통 공격", "속임수 동작"],
       info: "로라의 어머니인 함대장 레노어가 로라에게 선물한 검입니다. 결투에 도전했을 때, 레노어의 적들은 그녀가 해군의 악행으로 인해 이 별명을 얻었다고 생각했습니다. 하지만 로라의 검이 눈보다 빠르게 흐려지는 것을 보고 그들이 얼마나 틀렸는지 알게 되었죠.",
       damageStat: { maxDamage: 15, minDamage: 5, meanDamage: 7.0 },
+      id: 131,
     },
     {
       name_ko: "셀루네의 밤의 창",
@@ -1936,6 +2067,7 @@ export const gameData = {
       weaponActions: ["돌진 공격", "발목 공격"],
       info: '\'"셀루네 여신의 칭호 중 하나인 달의 성녀는 교계에서 자주 논란이 이 됐어요. 일반적인 칭호는 처녀성에 대한 가정을 부인해요. 더 중요한 건 "성녀" 자체의 의미가 애매하다는 거죠. 그러니까 \'달의 여인\'은 어때요? 발음하기도 좋잖아요."- 마거리 헨더플럼',
       damageStat: { maxDamage: 11, minDamage: 4, meanDamage: 4.5 },
+      id: 132,
     },
     {
       name_ko: "샤의 해질녘의 창",
@@ -1956,6 +2088,7 @@ export const gameData = {
       ],
       info: "꿈속에서 인간을 방문할 때면, 샤의 머리카락은 먹빛의 한밤중처럼 그녀의 머리를 휘감고 꼬였습니다. 그것이 그녀의 코를 간지럽히면, 여신은 그것을 보여주지 않도록 조심했습니다.",
       damageStat: { maxDamage: 21, minDamage: 6, meanDamage: 10.5 },
+      id: 133,
     },
     {
       name_ko: "니룰나",
@@ -1978,6 +2111,7 @@ export const gameData = {
       ],
       info: "대장장이 리리코는 바람의 여신 아카디의 투사를 위해 이 제작한 무기입니다. 핵심 재료가 그의 고향에서 불어오는 바람이었기에, 무기가 완성된 후 1년 동안 고향에는 바람 한 점 불지 않았습니다.",
       damageStat: { maxDamage: 17, minDamage: 5, meanDamage: 8.0 },
+      id: 134,
     },
     {
       name_ko: "영계의 은검",
@@ -1998,6 +2132,7 @@ export const gameData = {
       ],
       info: "여왕에게 열성적으로 헌신하는 기스양키들의 태도는 누군가에겐 존경심을, 누군가에겐 불안감을 불러일으킵니다. 그들에게 신의 불완전성을 설파한다면(완벽한 존재란 세상에 존재하지 않으니까요), 과연 어떤 반응을 보일지 쉬이 예상하기 어렵습니다.",
       damageStat: { maxDamage: 21, minDamage: 6, meanDamage: 10.5 },
+      id: 135,
     },
     {
       name_ko: "발더란의 거인살해자",
@@ -2018,6 +2153,7 @@ export const gameData = {
       ],
       info: "발더스 게이트의 창시자이자 그의 수호 용인 안수르의 친구인 발더란이 휘두르는 거대한 빛나는 웜은 안수르라고 불립니다. 하지만 우정은 신발 끈을 푸는 것처럼 쉽게 풀릴 수 있으며, 발더란이 안수르를 죽이고 이 검으로 임무를 완수한 시기는 험난하고 고난의 시기였습니다.",
       damageStat: { maxDamage: 15, minDamage: 5, meanDamage: 7.0 },
+      id: 136,
     },
     {
       name_ko: "신도의 철퇴",
@@ -2032,6 +2168,7 @@ export const gameData = {
       weaponActions: ["뇌진탕 충돌", "등골파괴자"],
       info: "낙원의 신성한 선봉대인 천족 디바들이 애용하는 무기입니다.",
       damageStat: { maxDamage: 17, minDamage: 5, meanDamage: 8.0 },
+      id: 137,
     },
     {
       name_ko: "라샌더의 피",
@@ -2049,6 +2186,7 @@ export const gameData = {
       weaponActions: ["뇌진탕 일격"],
       info: "-",
       damageStat: { maxDamage: 9, minDamage: 4, meanDamage: 3.5 },
+      id: 138,
     },
     {
       name_ko: "마르코헤쉬키르",
@@ -2066,6 +2204,7 @@ export const gameData = {
       weaponActions: [],
       info: "비전 지식의 드래곤 여신, 케레스카는 여러 오색 드래곤에게 강렬하고 끔찍한 숨결을 비롯한 마법을 불어넣었습니다. 그렇게 거인들을 높은 왕좌에서 끌어내리고, 거인족의 문명을 파괴했습니다.",
       damageStat: { maxDamage: 10, minDamage: 3, meanDamage: 4.5 },
+      id: 139,
     },
     {
       name_ko: "오르페우스의 망치",
@@ -2081,6 +2220,7 @@ export const gameData = {
       weaponActions: ["등골파괴자", "뇌진탕 충돌", "쇠약의 일격"],
       info: "악마가 맺는 계약에는 어떤 형태로든 반드시 보험이 있습니다. 이 경우에는 지옥의 철을 깊고 파괴적인 지옥불로 녹여 만든 보험이로군요.",
       damageStat: { maxDamage: 13, minDamage: 4, meanDamage: 5.5 },
+      id: 140,
     },
     {
       name_ko: "피해량",
@@ -2096,6 +2236,7 @@ export const gameData = {
       weaponActions: ["등골파괴자", "뇌진탕 충돌", "쇠약의 일격"],
       info: "악마가 맺는 계약에는 어떤 형태로든 반드시 보험이 있습니다. 이 경우에는 지옥의 철을 깊고 파괴적인 지옥불로 녹여 만든 보험이로군요.",
       damageStat: { maxDamage: 13, minDamage: 4, meanDamage: 5.5 },
+      id: 141,
     },
     {
       name_ko: "감시자 석궁",
@@ -2108,6 +2249,7 @@ export const gameData = {
       weaponActions: ["관통 사격", "대비"],
       info: "-",
       damageStat: { maxDamage: 30, minDamage: 3, meanDamage: 16.5 },
+      id: 142,
     },
     {
       name_ko: "사냥하는 숏보우",
@@ -2123,6 +2265,7 @@ export const gameData = {
       weaponActions: ["힘줄 사격"],
       info: "유연하고 튼튼한 이 단궁에는 레인저의 엄숙한 마법이 깃들어 있습니다. 부드러운 재를 따라 손가락을 움직이면 나무 모양에서 유령 같은 엄숙함이 느껴집니다.",
       damageStat: { maxDamage: 7, minDamage: 2, meanDamage: 3.5 },
+      id: 143,
     },
     {
       name_ko: "인지의 활 / 인지력의 활",
@@ -2135,6 +2278,7 @@ export const gameData = {
       weaponActions: ["힘줄 사격"],
       info: "이 하플링 활은 키가 작은 이들이 사용하려면 완전히 활시위를 당겨 발사해야 하지만, 키가 큰 이들은 살짝만 당겨도 사용할 수 있습니다.",
       damageStat: { maxDamage: 7, minDamage: 2, meanDamage: 3.5 },
+      id: 144,
     },
     {
       name_ko: "주문도둑",
@@ -2149,6 +2293,7 @@ export const gameData = {
       weaponActions: ["힘줄 사격", "대비"],
       info: "아떠한 징조와도 같은 마법의 전율이 이 활을 통해 당신의 손으로 흐릅니다.",
       damageStat: { maxDamage: 8, minDamage: 1, meanDamage: 4.5 },
+      id: 145,
     },
     {
       name_ko: "헬라이더 장궁",
@@ -2164,6 +2309,7 @@ export const gameData = {
       weaponActions: ["힘줄 사격", "대비"],
       info: "이 장궁은 몇 년 전 레이븐로프트 성의 잔해 근처에서 발견된 은의 스타니슬라브의 방패 잔해로 만든 것입니다.",
       damageStat: { maxDamage: 9, minDamage: 2, meanDamage: 4.5 },
+      id: 146,
     },
     {
       name_ko: "방화자",
@@ -2178,6 +2324,7 @@ export const gameData = {
       weaponActions: ["관통 사격", "기동 사격"],
       info: "석궁의 볼트는 타는 듯 뜨거워 보이지만, 만지면 기분 좋게 따뜻합니다.",
       damageStat: { maxDamage: 6, minDamage: 1, meanDamage: 3.5 },
+      id: 147,
     },
     {
       name_ko: "간드렐의 포부",
@@ -2194,6 +2341,7 @@ export const gameData = {
       ],
       info: "간드렐이 일곱 살이었을 때, 그는 한 민중 방화 사건에서 뱀파이어 스폰을 크게 두려워하게 되었습니다. 불타는 화염에 사로잡힌 그는 그것이 수축하지 않고 쪼그라드는 지렁이 같은 모습으로 변했습니다. 그의 뇌가 아이의 신발에 튀어 발에 새까맣게 묻었습니다.  그는 그날을 결코 잊지 못할 것입니다.",
       damageStat: { maxDamage: 11, minDamage: 2, meanDamage: 5.5 },
+      id: 148,
     },
     {
       name_ko: "비전 역장의 석궁",
@@ -2210,6 +2358,7 @@ export const gameData = {
       ],
       info: "외계 금속에서 부드러운 힘의 윙윙거림이 흘러나옵니다.",
       damageStat: { maxDamage: 11, minDamage: 2, meanDamage: 5.5 },
+      id: 149,
     },
     {
       name_ko: "밴시의 활",
@@ -2224,6 +2373,7 @@ export const gameData = {
       weaponActions: ["힘줄 사격"],
       info: "정교하게 구부러진 활에서 엘프의 얼굴이 소리 없이 비명을 지르는 듯한 인상을 주며, 활을 놓을 때 활시위가 앞으로 꺾이면서 피가 끓는 듯한 비명을 지르면 이미지가 더욱 불안하게 변합니다.",
       damageStat: { maxDamage: 7, minDamage: 2, meanDamage: 3.5 },
+      id: 150,
     },
     {
       name_ko: "뜻밖의 행운",
@@ -2241,6 +2391,7 @@ export const gameData = {
       ],
       info: "딥 듀에르가의 반항적인 아이들의 유물 중 하나. 조용하고 눈물 흘리며 어머니의 손아귀에 있는 딸인 루드밀라가 이 활을 들고 발사한 것은 모두를 놀라게 했습니다. 힘없이 아이들은 불확실하지만 달콤하게 아름다운 미래로 탈출했습니다.",
       damageStat: { maxDamage: 7, minDamage: 2, meanDamage: 3.5 },
+      id: 151,
     },
     {
       name_ko: "어둠불꽃 숏보우",
@@ -2257,6 +2408,7 @@ export const gameData = {
       weaponActions: ["힘줄 사격"],
       info: "이 길이의 주목은 금색과 은색 용의 숨결이 섞여 식고 정제된 옻칠로 광택을 냈습니다.",
       damageStat: { maxDamage: 8, minDamage: 3, meanDamage: 3.5 },
+      id: 152,
     },
     {
       name_ko: "전격활",
@@ -2271,6 +2423,7 @@ export const gameData = {
       weaponActions: ["힘줄 사격", "대비"],
       info: "매끈하고 가벼운 전격활은 번개맞이 이르가 가장 좋아하는 무기였다고 합니다. 그는 활 자체에는 무관심했지만, 튀어나와 있는 가시들은 어떻게 생각했을까요?",
       damageStat: { maxDamage: 8, minDamage: 1, meanDamage: 4.5 },
+      id: 153,
     },
     {
       name_ko: "거인힘줄 활",
@@ -2285,6 +2438,7 @@ export const gameData = {
       weaponActions: ["힘줄 사격", "대비", "밀어내는 사격"],
       info: "양궁 선수는 손목이 가늘고 긴 사람이라는 통념은 완전히 잘못된 생각입니다. 활시위를 광대뼈까지 당기기 위해서는 수년간의 훈련이 필요하며, 손목은 쇠처럼 단단해야 합니다.",
       damageStat: { maxDamage: 9, minDamage: 2, meanDamage: 4.5 },
+      id: 154,
     },
     {
       name_ko: "백발백중",
@@ -2297,6 +2451,7 @@ export const gameData = {
       weaponActions: ["관통 사격", "기동 사격"],
       info: "쇠뇌 손잡이에 제작자가 작은 글씨를 새겨 두었습니다: '이글로도 몬 마추면, 찌질하게 굴지 말고 두들겨패셔!'.",
       damageStat: { maxDamage: 7, minDamage: 2, meanDamage: 3.5 },
+      id: 155,
     },
     {
       name_ko: "거인 파괴자",
@@ -2311,6 +2466,7 @@ export const gameData = {
       weaponActions: ["관통 사격", "대비"],
       info: "전설에 따르면 어느 엘프 레인저가 홀로 수많은 언덕거인을 해치우면서 명성을 얻었다고 합니다. 그 레인저의 이름은 전해지지 않지만, 엘프가 쓰던 무기인 거인 파괴자의 명성은 지금도 전해져 내려옵니다.",
       damageStat: { maxDamage: 11, minDamage: 2, meanDamage: 5.5 },
+      id: 156,
     },
     {
       name_ko: "헤롤드",
@@ -2325,6 +2481,7 @@ export const gameData = {
       weaponActions: ["관통 사격", "대비"],
       info: "새 주인들에 의해 개명되기 전, 워터딥에서 버터비스크 여관이라 불리는 곳을 소유했던 헤롤드 버터비스크의 이름을 땄습니다. 쇠뇌의 개머리판엔 이렇게 쓰여 있습니다: 과음은 쏴도 정당한 행위이다.",
       damageStat: { maxDamage: 11, minDamage: 2, meanDamage: 5.5 },
+      id: 157,
     },
     {
       name_ko: "구르의 긴 팔",
@@ -2339,6 +2496,7 @@ export const gameData = {
       weaponActions: ["관통 사격", "대비"],
       info: "새 주인들에 의해 개명되기 전, 워터딥에서 버터비스크 여관이라 불리는 곳을 소유했던 헤롤드 버터비스크의 이름을 땄습니다. 쇠뇌의 개머리판엔 이렇게 쓰여 있습니다: 과음은 쏴도 정당한 행위이다.",
       damageStat: { maxDamage: 11, minDamage: 2, meanDamage: 5.5 },
+      id: 158,
     },
     {
       name_ko: "역병인도자",
@@ -2354,6 +2512,7 @@ export const gameData = {
       weaponActions: ["힘줄 사격"],
       info: "고블린 주술사 키루크 레드랫은 노움의 유골과 드워프 성직자의 시체에 지방을 먹여 누에를 기르는 등 점점 더 병적인 의식을 거듭하며 이 치명적인 활을 만들어 냈습니다.",
       damageStat: { maxDamage: 7, minDamage: 2, meanDamage: 3.5 },
+      id: 159,
     },
     {
       name_ko: "필살",
@@ -2369,6 +2528,7 @@ export const gameData = {
       weaponActions: ["힘줄 사격", "대비"],
       info: "궁수 프레데릭 뒤루스크가 죽었을 때 그가 유일하게 부탁한 것은 자신이 가장 아끼던 활과 함께 묻어달라는 것이었습니다. 이 활이 바로 그 활입니다.",
       damageStat: { maxDamage: 10, minDamage: 3, meanDamage: 4.5 },
+      id: 160,
     },
     {
       name_ko: "지옥 불길 손쇠뇌",
@@ -2384,6 +2544,7 @@ export const gameData = {
       weaponActions: ["관통 사격", "기동 사격"],
       info: "교활한 악마가 아베르누스의 피부를 벗겨내는 지옥불을 끌어당기기 위해 조작한 이 석궁의 크기는 그 치명적인 잠재력을 가늠할 수 없습니다.",
       damageStat: { maxDamage: 8, minDamage: 3, meanDamage: 3.5 },
+      id: 161,
     },
     {
       name_ko: "날조의 석궁",
@@ -2398,6 +2559,7 @@ export const gameData = {
       weaponActions: ["관통 사격", "대비", "눈부신 광선(무기 행동)"],
       info: "완벽한 체계는 날카로운 눈을 가진 이가 다뤄야 합니다. 그 눈에 띌 만큼 멍청한 실수는 빠르게, 정확하게, 완전하게 제거해야만 합니다. 거기에 이 쇠뇌가 큰 도움이 될 겁니다.",
       damageStat: { maxDamage: 12, minDamage: 3, meanDamage: 5.5 },
+      id: 162,
     },
     {
       name_ko: "지옥불 엔진 석궁",
@@ -2414,6 +2576,7 @@ export const gameData = {
       ],
       info: "'짓밟고, 으깨고, 다지고, 부수고, 갈고, 폭파하고, 물어뜯고! 천둥소리, 활활 타오르는 불길, 딸깍거리는 금속성 멜로디를 들으며 아베르누스의 지옥불 엔진이 움직이고 있음을 알아차리세요!' - 엘투렐 칙령",
       damageStat: { maxDamage: 12, minDamage: 3, meanDamage: 5.5 },
+      id: 163,
     },
     {
       name_ko: "곤트르 마엘",
@@ -2434,6 +2597,7 @@ export const gameData = {
       ],
       info: "곤트르 마엘은 스틸 워치 타이탄의 시체에서 끓는 슬래그와 기계 거인 고유의 기묘한 속삭임 자이로스로 만든 활을 폭발시켰습니다. 이 활은 타이탄의 복부 역할을 하며 근육과 깨끗한 강철을 교환했을 거예요.",
       damageStat: { maxDamage: 13, minDamage: 4, meanDamage: 5.5 },
+      id: 164,
     },
   ],
 };

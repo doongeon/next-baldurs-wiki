@@ -1,37 +1,23 @@
 "use client";
 
-import { gameData } from "../gameData";
-import React, { useEffect, useState } from "react";
-import AutoCompleteSearchBar from "./components/AutoCompleteSearchBar";
-import SearchBar from "./components/SearchBar";
+import { useParams } from "next/navigation";
+import { useEffect, useState } from "react";
+import AutoCompleteSearchBar from "../../components/AutoCompleteSearchBar";
+import SearchBar from "../../components/SearchBar";
+import { gameData } from "../../../gameData";
+import { Weapon } from "../../page";
 import Link from "next/link";
-import WeaponTable from "./components/WeaponTable";
-import Title from "./components/Title";
+import AssetCard from "../../components/AssetCard";
+import Title from "../../components/Title";
 
-export interface Weapon {
-  name_ko: string;
-  name_en: string;
-  damage: string[];
-  weaponRange: number;
-  trait: string[];
-  enchantment: number;
-  special: string[];
-  weaponActions: string[];
-  info: string;
-  damageStat: {
-    maxDamage: number;
-    minDamage: number;
-    meanDamage: number;
-  };
-  id: number;
-}
+const weapons = gameData.weapons;
 
 export default function Page() {
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [nameMatchedItems, setNameMatchedItems] = useState<Weapon[]>([]);
   const [matchedItems, setMatchedItems] = useState<Weapon[]>([]);
-
-  const weapons = gameData.weapons;
+  const [asset, setAsset] = useState<Weapon>(null);
+  const params = useParams<{ id: string }>();
 
   useEffect(() => {
     const nameMatchedItems = weapons.filter(
@@ -81,31 +67,33 @@ export default function Page() {
     setMatchedItems(matchedWeapons);
   }, [searchQuery]);
 
+  useEffect(() => {
+    const assetId = Number(params.id);
+    const asset = weapons.find((item) => item.id === assetId);
+
+    if (asset) setAsset(asset);
+  }, []);
+
   return (
     <>
-      <div className="pb-10">
+      <div>
         <Title />
         <SearchBar setSearchQuery={setSearchQuery} />
-
-        <div className="relative">
-          <div className="bg-gray-700 p-px absolute w-full flex flex-col gap-px">
-            {searchQuery !== "" && nameMatchedItems.length > 0 && (
-              <AutoCompleteSearchBar
-                resultTitle="이름"
-                matchedItems={nameMatchedItems}
-              />
-            )}
-            {searchQuery !== "" && matchedItems.length > 0 && (
-              <AutoCompleteSearchBar
-                resultTitle="상세정보"
-                matchedItems={matchedItems}
-              />
-            )}
-          </div>
-        </div>
+        {searchQuery !== "" && nameMatchedItems.length > 0 && (
+          <AutoCompleteSearchBar
+            resultTitle="이름"
+            matchedItems={nameMatchedItems}
+          />
+        )}
+        {searchQuery !== "" && matchedItems.length > 0 && (
+          <AutoCompleteSearchBar
+            resultTitle="상세정보"
+            matchedItems={matchedItems}
+          />
+        )}
       </div>
-      
-      <WeaponTable />
+      {!asset && <div className="text-white">없어요</div>}
+      {asset && <AssetCard asset={asset} />}
     </>
   );
 }

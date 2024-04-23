@@ -1,5 +1,4 @@
-import Head from "next/head";
-import './global.css'
+import "./global.css";
 
 export default function RootLayout({
   children,
@@ -8,11 +7,11 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <Head>
-        <title>인터넷판</title>
-        <link rel="stylesheet" href="https://unpkg.com/xp.css"></link>
-      </Head>
-      <body>{children}</body>
+      <body>
+        <main className="h-screen flex flex-col items-center text-white py-48 gap-10 overflow-auto">
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
