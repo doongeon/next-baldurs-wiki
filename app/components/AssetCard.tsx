@@ -13,7 +13,7 @@ export default function AssetCard({ asset }: AssetCardProps) {
       >
         <div className="flex justify-between pb-3">
           <div className="h-20 flex flex-col justify-end">
-            <div className="text-white">{asset.name_ko}</div>
+            <div className="text-white text-2xl">{asset.name_ko}</div>
             <div className="text-white">{asset.name_en}</div>
           </div>
           <img
@@ -99,6 +99,23 @@ export default function AssetCard({ asset }: AssetCardProps) {
       {asset.info !== "-" && (
         <div className="text-white w-96 leading-relaxed whitespace-pre-wrap">
           {" " + asset.info}
+        </div>
+      )}
+
+      {asset?.comment !== "" && (
+        <>
+          <div className="text-white w-96 leading-relaxed whitespace-pre-wrap flex flex-col gap-5">
+            <h4 className="text-xl">추가 정보</h4>
+            <div>{" " + asset.comment.replace(". ", ". \n")}</div>
+          </div>
+          <hr />
+        </>
+      )}
+
+      {asset.howToGet !== "" && (
+        <div className="text-white w-96 leading-relaxed whitespace-pre-wrap flex flex-col gap-5">
+          <h4 className="text-xl mb-3">입수 방법</h4>
+          <div>{" " + asset.howToGet.replace(". ", ". \n")}</div>
         </div>
       )}
     </>

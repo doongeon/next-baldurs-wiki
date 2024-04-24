@@ -52,12 +52,22 @@ export default function Page() {
       weapon.info.includes(searchQuery)
     );
 
+    const commentMatchedItems = weapons.filter((weapon) =>
+      weapon.comment.includes(searchQuery)
+    );
+
+    const hotToGetMatchedItems = weapons.filter((weapon) =>
+      weapon.howToGet.includes(searchQuery)
+    );
+
     const combinedWeapons = [
       ...traitMatchedItems,
       ...specialMatchedItems,
       ...weaponActionMatchedItems,
       ...attackTypeMatchedItems,
       ...intoMatchedItems,
+      ...commentMatchedItems,
+      ...hotToGetMatchedItems,
     ];
 
     // 중복을 제거하기 위해 Set 객체로 변환 후 다시 배열로 변환
@@ -66,7 +76,7 @@ export default function Page() {
     setNameMatchedItems(nameMatchedItems);
     setMatchedItems(matchedWeapons);
   }, [searchQuery]);
-
+  
   useEffect(() => {
     const assetId = Number(params.id);
     const asset = weapons.find((item) => item.id === assetId);
