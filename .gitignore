@@ -3,3 +3,4 @@ node_modules/*
 python/env/*
 python/data/*
 venv
+python/*.json
