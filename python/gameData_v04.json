@@ -2118,7 +2118,7 @@
     "howToGet": "2장 그림자 대지 최후의 빛 여관의 탈리 분기장이 판매한다."
   },
   {
-    "name_ko": "비탄하는의 서리",
+    "name_ko": "비탄하는 서리",
     "name_en": "Mourning frost",
     "damage": ["1d8(1d6)+1 타격", "+1d4 냉기"],
     "weaponRange": 1.5,

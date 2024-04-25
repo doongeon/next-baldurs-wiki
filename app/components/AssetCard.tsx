@@ -1,4 +1,5 @@
-import { Weapon } from "../page";
+import { Weapon } from "../src/interfaces";
+
 
 interface AssetCardProps {
   asset: Weapon;

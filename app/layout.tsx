@@ -1,3 +1,6 @@
+import Recoil from "./Recoil";
+import AutoCompleteSearchBar from "./components/AutoCompleteSearchBar";
+import Title from "./components/Title";
 import "./global.css";
 
 export default function RootLayout({
@@ -8,9 +11,15 @@ export default function RootLayout({
   return (
     <html>
       <body>
-        <main className="h-screen flex flex-col items-center text-white py-48 gap-10 overflow-auto">
-          {children}
-        </main>
+        <Recoil>
+          <main className="h-screen flex flex-col items-center text-white py-48 gap-10 overflow-auto">
+            <div className="pb-10">
+              <Title />
+              <AutoCompleteSearchBar />
+            </div>
+            {children}
+          </main>
+        </Recoil>
       </body>
     </html>
   );

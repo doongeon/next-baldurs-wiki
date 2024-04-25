@@ -1,23 +1,53 @@
-import { Weapon } from "../page";
-import Link from "next/link";
+"use client";
+
+import { useEffect, useState } from "react";
+import { inputFocusState, searchQueryState } from "../Atom";
+import AutoCompleteSearch from "./SearchAutoComplete";
+import { useRecoilState, useRecoilValue } from "recoil";
+import SearchBar from "./SearchBar";
+import filterWeapon from "../src/filterWeapon";
+import { Weapon } from "../src/interfaces";
 
 interface AutoCompleteSearchBarProps {
-  resultTitle: string;
-  matchedItems: Weapon[];
+  assetName?: string;
 }
 
 export default function AutoCompleteSearchBar({
-  resultTitle,
-  matchedItems,
+  assetName,
 }: AutoCompleteSearchBarProps) {
+  const searchQuery = useRecoilValue(searchQueryState);
+  const [inputFocus, setInputFocus] = useRecoilState(inputFocusState);
+  const [nameMatchedItems, setNameMatchedItems] = useState<Weapon[]>([]);
+  const [matchedItems, setMatchedItems] = useState<Weapon[]>([]);
+
+  useEffect(() => {
+    const { nameMatchedItems, matchedItems } = filterWeapon(searchQuery);
+    setNameMatchedItems(nameMatchedItems);
+    setMatchedItems(matchedItems);
+  }, [searchQuery]);
+
   return (
-    <div className="bg-gray-700 flex flex-col gap-px">
-      <h3 className="text-center py-1 bg-gray-900">{resultTitle}</h3>
-      {matchedItems.map((item) => (
-        <div className="flex flex-col bg-gray-900">
-          <Link href={`/asset/${item.id}`}>{item.name_ko}</Link>
+    <>
+      <SearchBar />
+
+      {inputFocus ? (
+        <div className="relative">
+          <div className="bg-gray-700 p-px absolute w-full flex flex-col gap-px">
+            {searchQuery !== "" && nameMatchedItems.length > 0 && (
+              <AutoCompleteSearch
+                resultTitle="이름"
+                matchedItems={nameMatchedItems}
+              />
+            )}
+            {inputFocus && searchQuery !== "" && matchedItems.length > 0 && (
+              <AutoCompleteSearch
+                resultTitle="상세정보"
+                matchedItems={matchedItems}
+              />
+            )}
+          </div>
         </div>
-      ))}
-    </div>
+      ) : null}
+    </>
   );
 }
