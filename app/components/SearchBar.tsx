@@ -1,28 +1,31 @@
 "use client";
 
-import { useRouter } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
+import { useEffect } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
-import { useRecoilState, useSetRecoilState } from "recoil";
-import { inputFocusState, searchQueryState } from "../Atom";
+import { useSetRecoilState } from "recoil";
+import { autoCompeleteViewState, searchQueryState } from "../Atom";
 
 type Input = {
   searchQeury: string;
 };
 
 export default function SearchBar() {
+  const params = useSearchParams();
   const router = useRouter();
-  const inputRef = useRef(null);
-  const [inputFocus, setInputFocus] = useRecoilState(inputFocusState);
+  const setAutoCompleteView = useSetRecoilState(autoCompeleteViewState);
   const setSearchQuery = useSetRecoilState(searchQueryState);
   const {
     register,
     handleSubmit,
     watch,
-    reset,
-    setFocus,
+    setValue,
     formState: { errors },
   } = useForm<Input>();
+
+  useEffect(() => {
+    if (!params.get("searchQuery")) setValue("searchQeury", "");
+  }, [params]);
 
   useEffect(() => {
     setSearchQuery(watch("searchQeury"));
@@ -30,23 +33,24 @@ export default function SearchBar() {
 
   const onSubmit: SubmitHandler<Input> = ({ searchQeury }) => {
     (document.activeElement as HTMLElement).blur();
-    setInputFocus(false);
+    setAutoCompleteView(false);
+    setSearchQuery("");
     router.push(`/?searchQuery=${searchQeury}`);
   };
 
   const handleFocus = () => {
-    setInputFocus(true);
+    setAutoCompleteView(true);
+    setSearchQuery(watch("searchQeury"));
   };
 
   const handleBlur = () => {
-    setInputFocus(false);
+    setTimeout(() => setAutoCompleteView(false), 300);
   };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <input
-        ref={inputRef}
-        className="text-black w-96"
+        className="text-black w-80"
         {...register("searchQeury", {
           required: true,
         })}

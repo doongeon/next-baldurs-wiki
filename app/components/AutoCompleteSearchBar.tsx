@@ -1,7 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { inputFocusState, searchQueryState } from "../Atom";
+import {
+  autoCompeleteViewState,
+  searchQueryState,
+} from "../Atom";
 import AutoCompleteSearch from "./SearchAutoComplete";
 import { useRecoilState, useRecoilValue } from "recoil";
 import SearchBar from "./SearchBar";
@@ -16,7 +19,9 @@ export default function AutoCompleteSearchBar({
   assetName,
 }: AutoCompleteSearchBarProps) {
   const searchQuery = useRecoilValue(searchQueryState);
-  const [inputFocus, setInputFocus] = useRecoilState(inputFocusState);
+  const [autoCompleteView, setAutoCompleteView] = useRecoilState(
+    autoCompeleteViewState
+  );
   const [nameMatchedItems, setNameMatchedItems] = useState<Weapon[]>([]);
   const [matchedItems, setMatchedItems] = useState<Weapon[]>([]);
 
@@ -27,19 +32,19 @@ export default function AutoCompleteSearchBar({
   }, [searchQuery]);
 
   return (
-    <>
+    <div>
       <SearchBar />
 
-      {inputFocus ? (
+      {autoCompleteView ? (
         <div className="relative">
-          <div className="bg-gray-700 p-px absolute w-full flex flex-col gap-px">
+          <div className="bg-gray-700 p-px absolute w-80 flex flex-col gap-px">
             {searchQuery !== "" && nameMatchedItems.length > 0 && (
               <AutoCompleteSearch
                 resultTitle="이름"
                 matchedItems={nameMatchedItems}
               />
             )}
-            {inputFocus && searchQuery !== "" && matchedItems.length > 0 && (
+            {searchQuery !== "" && matchedItems.length > 0 && (
               <AutoCompleteSearch
                 resultTitle="상세정보"
                 matchedItems={matchedItems}
@@ -48,6 +53,6 @@ export default function AutoCompleteSearchBar({
           </div>
         </div>
       ) : null}
-    </>
+    </div>
   );
 }

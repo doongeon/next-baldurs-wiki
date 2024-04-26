@@ -4,14 +4,17 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import filterWeapon from "../src/filterWeapon";
 import { Weapon } from "../src/interfaces";
+import { useRecoilValue } from "recoil";
+import { rarityFilterState } from "../Atom";
 
 const weapons = gameData.weapons;
 
-export default function WeaponTable() {
+export default function AssetTable() {
   const searchParams = useSearchParams();
   const searchQuery = searchParams.get("searchQuery");
   const [showAll, setShowAll] = useState(false);
   const [searchAssets, setSearchAssets] = useState<Weapon[]>([]);
+  const rarityFilter = useRecoilValue(rarityFilterState);
 
   const toggleShowAll = () => {
     setShowAll((curr) => !curr);
@@ -25,8 +28,23 @@ export default function WeaponTable() {
 
     const { nameMatchedItems, matchedItems } = filterWeapon(searchQuery);
 
-    setSearchAssets(nameMatchedItems);
-  }, [searchQuery]);
+    const combinedWeapons = [...nameMatchedItems, ...matchedItems];
+    // 중복을 제거하기 위해 Set 객체로 변환 후 다시 배열로 변환
+    const allMatchedItems = Array.from(new Set(combinedWeapons));
+
+    // allMatchedItems.filter(item => Array.from(rarityFilter).every(filter => item.attackTypes.includes(filter)))
+
+    // setSearchAssets(allMatchedItems);
+    setSearchAssets(
+      allMatchedItems.filter((item) =>
+        Array.from(rarityFilter).every((filter) =>
+          item.attackTypes.includes(filter)
+        )
+      )
+    );
+
+    console.log("filtering!")
+  }, [searchQuery, rarityFilter]);
 
   return (
     <>
