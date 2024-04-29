@@ -1,4 +1,3 @@
-import extractAttackType from "../src/extractAttackType";
 import { Weapon } from "../src/interfaces";
 
 interface AssetCardProps {

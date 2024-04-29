@@ -6,7 +6,7 @@ export default function filterWeapon(searchQuery: string) {
   const nameMatchedItems = weapons.filter(
     (weapon) =>
       weapon.name_ko.includes(searchQuery) ||
-      weapon.name_en.toLowerCase().includes(searchQuery.toLowerCase())
+      weapon.name_en.toLowerCase().includes(searchQuery?.toLowerCase())
   );
 
   const traitMatchedItems = weapons.filter(
