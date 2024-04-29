@@ -4,8 +4,9 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import filterWeapon from "../src/filterWeapon";
 import { Weapon } from "../src/interfaces";
-import { useRecoilValue } from "recoil";
+import { useRecoilState, useRecoilValue } from "recoil";
 import { rarityFilterState } from "../Atom";
+import getRarityColor from "../src/getRarityColor";
 
 const weapons = gameData.weapons;
 
@@ -22,7 +23,17 @@ export default function AssetTable() {
 
   useEffect(() => {
     if (!searchQuery) {
-      setSearchAssets(weapons);
+      if (rarityFilter.size === 0) {
+        setSearchAssets(weapons);
+        return;
+      }
+
+      setSearchAssets(
+        weapons.filter((item) =>
+          Array.from(rarityFilter).some((rarity) => item.rarity === rarity)
+        )
+      );
+
       return;
     }
 
@@ -32,18 +43,16 @@ export default function AssetTable() {
     // 중복을 제거하기 위해 Set 객체로 변환 후 다시 배열로 변환
     const allMatchedItems = Array.from(new Set(combinedWeapons));
 
-    // allMatchedItems.filter(item => Array.from(rarityFilter).every(filter => item.attackTypes.includes(filter)))
+    if (rarityFilter.size === 0) {
+      setSearchAssets(allMatchedItems);
+      return;
+    }
 
-    // setSearchAssets(allMatchedItems);
-    setSearchAssets(
-      allMatchedItems.filter((item) =>
-        Array.from(rarityFilter).every((filter) =>
-          item.attackTypes.includes(filter)
-        )
-      )
+    const filteredItems = allMatchedItems.filter((item) =>
+      Array.from(rarityFilter).some((filter) => item.rarity.includes(filter))
     );
 
-    console.log("filtering!")
+    setSearchAssets(filteredItems);
   }, [searchQuery, rarityFilter]);
 
   return (
@@ -79,7 +88,12 @@ export default function AssetTable() {
                       key={`tableItem_${index}`}
                       className="flex justify-around p-3 hover:bg-slate-800 "
                     >
-                      <div className="w-40">{weapon.name_ko}</div>
+                      <div
+                        className="w-40"
+                        style={{ color: `${getRarityColor(weapon.rarity)}` }}
+                      >
+                        {weapon.name_ko}
+                      </div>
                       <div className="w-40 flex flex-col">
                         {weapon.damage.map((damage) => (
                           <div>{damage}</div>
