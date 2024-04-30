@@ -5,6 +5,7 @@ export enum Rarity {
   "Rare" = "Rare",
   "VeryRare" = "VeryRare",
   "Legendary" = "Legendary",
+  "Common" = "Common",
 }
 
 export const searchQueryState = atom<string>({

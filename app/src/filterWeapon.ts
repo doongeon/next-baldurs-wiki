@@ -5,8 +5,8 @@ const weapons = gameData.weapons;
 export default function filterWeapon(searchQuery: string) {
   const nameMatchedItems = weapons.filter(
     (weapon) =>
-      weapon.name_ko.includes(searchQuery) ||
-      weapon.name_en.toLowerCase().includes(searchQuery?.toLowerCase())
+      weapon.name_ko?.includes(searchQuery) ||
+      weapon.name_en?.toLowerCase().includes(searchQuery?.toLowerCase())
   );
 
   const traitMatchedItems = weapons.filter(
@@ -56,5 +56,5 @@ export default function filterWeapon(searchQuery: string) {
   // 중복을 제거하기 위해 Set 객체로 변환 후 다시 배열로 변환
   const matchedItems = Array.from(new Set(combinedWeapons));
 
-  return {nameMatchedItems, matchedItems}
+  return { nameMatchedItems, matchedItems };
 }

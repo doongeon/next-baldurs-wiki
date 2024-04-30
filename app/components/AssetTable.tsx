@@ -49,7 +49,7 @@ export default function AssetTable() {
     }
 
     const filteredItems = allMatchedItems.filter((item) =>
-      Array.from(rarityFilter).some((filter) => item.rarity.includes(filter))
+      Array.from(rarityFilter).some((filter) => item.rarity === filter)
     );
 
     setSearchAssets(filteredItems);

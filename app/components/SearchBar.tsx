@@ -25,6 +25,7 @@ export default function SearchBar() {
 
   useEffect(() => {
     if (!params.get("searchQuery")) setValue("searchQeury", "");
+    setValue("searchQeury", params.get("searchQuery"));
   }, [params]);
 
   useEffect(() => {
