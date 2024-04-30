@@ -7,6 +7,7 @@ export default function Page() {
   return (
     <>
       <Filter />
+      <div className="bg-neutral-500 h-px max-w-screen-sm w-full" />
       <AssetTable />
     </>
   );

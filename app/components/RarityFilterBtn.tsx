@@ -9,23 +9,33 @@ interface RarityFilterBtnProps {
   rarity: Rarity;
 }
 
-const Button = styled.div<{ rarity: Rarity; active: boolean }>`
-  color: ${(props) => getRarityColor(props.rarity)};
+const Button = styled.button<{ rarity: Rarity; active: boolean }>`
+  color: ${(props) =>
+    props.active ? "rgba(255,255,255, 0.8)" : getRarityColor(props.rarity)};
+  font-weight: 400;
   border: 1px solid ${(props) => getRarityColor(props.rarity)};
-  text-shadow: ${(props) =>
-    props.active
-      ? "0px 0px 10px " +
-        getRarityColor(props.rarity) +
-        ", 0px 0px 20px rgba(255,255,255,0.9)"
-      : ""};
+  text-shadow: ${(props) => "0px 0px 5px " + getRarityColor(props.rarity)};
   box-shadow: ${(props) =>
-    props.active
-      ? "0px 0px 15px " +
-        getRarityColor(props.rarity) +
-        ", inset 0px 0px 5px " +
-        getRarityColor(props.rarity)
-      : ""};
-  transition: linear 0.1s;
+    "0px 0px 15px " +
+    getRarityColor(props.rarity) +
+    ", inset 0px 0px 5px " +
+    getRarityColor(props.rarity)};
+  transition: linear 0.4s;
+  position: relative;
+
+  &:after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    filter: blur(10px);
+    background-color: ${(props) =>
+      props.active ? getRarityColor(props.rarity) : "transparent"};
+    transition: linear 0.4s;
+  }
 `;
 
 export default function RarityFilterBtn({
@@ -67,7 +77,7 @@ export default function RarityFilterBtn({
       rarity={rarity}
       active={active}
       onClick={() => handleClick(rarity)}
-      className="cursor-pointer"
+      className="cursor-pointer px-2 py-1 select-none"
     >
       {text}
     </Button>

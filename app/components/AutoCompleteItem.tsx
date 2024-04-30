@@ -8,7 +8,7 @@ interface AutoCompleteSearchBarProps {
   matchedItems: Weapon[];
 }
 
-export default function AutoCompleteSearch({
+export default function AutoCompleteItem({
   resultTitle,
 
   matchedItems,
@@ -22,11 +22,11 @@ export default function AutoCompleteSearch({
   };
 
   return (
-    <div className="bg-gray-700 flex flex-col gap-px">
-      <h3 className="text-center py-1 bg-gray-900">{resultTitle}</h3>
+    <div className="bg-neutral-600 flex flex-col gap-px">
+      <h3 className="text-center py-1 bg-neutral-600">{resultTitle}</h3>
       {matchedItems.map((item) => (
         <div
-          className="bg-gray-900 cursor-pointer hover:bg-gray-800"
+          className="bg-neutral-900 cursor-pointer hover:bg-neutral-600 py-2 px-5 transition select-none"
           onClick={() => handleClick(item.id)}
         >
           {item.name_ko}
@@ -35,4 +35,3 @@ export default function AutoCompleteSearch({
     </div>
   );
 }
-
