@@ -57,7 +57,7 @@ export default function AssetTable() {
   }, [searchQuery, rarityFilter]);
 
   return (
-    <div className="w-full max-w-screen-sm h-96 flex flex-col gap-5">
+    <div className="w-full max-w-screen-sm flex flex-col gap-5">
       {searchAssets.length === 0 ? (
         <div className="text-white">없어요</div>
       ) : (
@@ -69,25 +69,21 @@ export default function AssetTable() {
             {showAll ? "접기" : "전부 보기"}
           </div>
 
-          <table className="w-full max-w-screen-sm">
-            <thead className="">
-              <tr className="*:border-b-2 *:border-neutral-600 *:py-2">
-                <th>이름</th>
-                <th>데미지</th>
-                <th>최대 데미지</th>
-              </tr>
-            </thead>
-            <tbody>
-              {searchAssets
-                .sort(
-                  (w1, w2) => -w1.damageStat.maxDamage + w2.damageStat.maxDamage
-                )
-                .slice(0, showAll ? weapons.length : 5)
-                .map((weapon) => (
-                  <AssetTableItem key={weapon.id} weapon={weapon} />
-                ))}
-            </tbody>
-          </table>
+          <div className="w-full max-w-screen-sm flex flex-col">
+            <div className="w-full flex justify-around *:w-full *:max-w-20 border-b-2 border-b-neutral-600 pb-2">
+              <div>이름</div>
+              <div>데미지</div>
+              <div>최대 데미지</div>
+            </div>
+            {searchAssets
+              .sort(
+                (w1, w2) => -w1.damageStat.maxDamage + w2.damageStat.maxDamage
+              )
+              .slice(0, showAll ? weapons.length : 5)
+              .map((weapon) => (
+                <AssetTableItem key={weapon.id} weapon={weapon} />
+              ))}
+          </div>
         </>
       )}
     </div>

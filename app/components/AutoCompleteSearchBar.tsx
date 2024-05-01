@@ -2,9 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { autoCompeleteViewState, searchQueryState } from "../Atom";
-import AutoCompleteSearch from "./AutoCompleteItem";
 import { useRecoilState, useRecoilValue } from "recoil";
-import SearchBar from "./SearchBar";
 import filterWeapon from "../src/filterWeapon";
 import { Weapon } from "../src/interfaces";
 import AutoCompleteItem from "./AutoCompleteItem";

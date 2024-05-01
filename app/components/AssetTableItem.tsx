@@ -8,17 +8,23 @@ interface AssetTableItem {
 
 export default function AssetTableItem({ weapon }: AssetTableItem) {
   return (
-    <tr className="*:border-b-2 *:border-neutral-600">
-      <td style={{ color: `${getRarityColor(weapon.rarity)}` }}>
+    <Link
+      className="w-full grid grid-cols-3 border-b-2 border-b-neutral-600 py-3 gap-10 relative after:bg-white after:top-0 after:left-0 after:w-full hover:after:h-full hover:after:-z-10 after:blur-md hover:after:opacity-10 after:transition after:absolute after:opacity-0"
+      href={`asset/${weapon.id}`}
+    >
+      <div
+        className="flex justify-start items-center"
+        style={{ color: `${getRarityColor(weapon.rarity)}` }}
+      >
         {weapon.name_ko}
-      </td>
-      <td className="w-full flex flex-col gap-1">
+      </div>
+      <div className="flex flex-col">
         {weapon.damage.map((damage) => (
           <div>{damage}</div>
         ))}
-      </td>
-      <td className="text-center">{weapon.damageStat.maxDamage}</td>
-    </tr>
+      </div>
+      <div className="flex justify-start items-center">{weapon.damageStat.maxDamage}</div>
+    </Link>
   );
 }
 
